@@ -142,6 +142,25 @@ section{margin-top:34px}
   color:#7A6218; border-radius:10px; padding:10px 13px; font-size:12.5px; line-height:1.7;
 }
 
+/* ===== 成绩排名入口 ===== */
+.rank-link{
+  margin-top:12px; display:flex; align-items:center; gap:12px;
+  background:var(--navy); color:#F4F0E4; border-radius:12px;
+  padding:14px 15px; text-decoration:none;
+  box-shadow:0 2px 10px rgba(18,41,62,.14);
+  transition:transform .15s ease;
+}
+.rank-link:active{transform:scale(.985)}
+.rank-link .rl-ic{
+  flex:none; width:42px; height:42px; border-radius:10px;
+  background:rgba(201,162,39,.16); color:var(--gold);
+  display:flex; align-items:center; justify-content:center;
+}
+.rank-link .rl-body{flex:1; min-width:0}
+.rank-link .rl-title{display:block; font-size:14.5px; font-weight:700; color:#fff}
+.rank-link .rl-sub{display:block; font-size:12px; color:#A9BBCB; line-height:1.55; margin-top:3px}
+.rank-link .rl-go{flex:none; color:#E3C877; display:flex}
+
 /* ===== 资格查询 ===== */
 #query .card{padding:18px 16px}
 .query-desc{font-size:13.5px; color:var(--ink-2); margin-bottom:14px}
@@ -342,6 +361,15 @@ footer .hr{height:1px; background:rgba(255,255,255,.12); margin:12px 0}
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#A8841C" stroke-width="1.8"/><path d="M12 7.5V13" stroke="#A8841C" stroke-width="1.8"/><circle cx="12" cy="16.4" r="1" fill="#A8841C"/></svg>
       <span><b>国家奖学金与国家励志奖学金不能同时兼得</b>；国奖名额以学院评审公示为准，国励申请者须同时满足困难认定与成绩排名双重条件。</span>
     </div>
+
+    <a class="rank-link" href="https://guan4425390.github.io/yaoben-rank-query/" target="_blank" rel="noopener">
+      <span class="rl-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <span class="rl-body">
+        <span class="rl-title">成绩排名查询</span>
+        <span class="rl-sub">查看 24级4、5、6班 当前成绩排名（药学院2024级本科药学）<br>目前为考试分数排名，后续中测排名也将在同一链接更新</span>
+      </span>
+      <span class="rl-go"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
   </section>
 
   <!-- ===== 03 贫困认定资格查询 ===== -->
