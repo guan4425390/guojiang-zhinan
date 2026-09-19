@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>2025-2026学年 国家奖学金·国家励志奖学金 评审指引</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231C3D5A'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%23C9A227' stroke-width='3'/%3E%3Cpath d='M32 14l5.2 10.5 11.6 1.7-8.4 8.2 2 11.6L32 40.5l-10.4 5.5 2-11.6-8.4-8.2 11.6-1.7z' fill='%23C9A227'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900&display=swap">
+<style>
+:root{
+  --navy:#1C3D5A; --navy-deep:#12293E; --navy-soft:#EAF0F5;
+  --gold:#C9A227; --gold-deep:#A8841C; --gold-soft:#F7EFD9;
+  --paper:#F6F4EE; --card:#FFFFFF; --line:#E4DECF;
+  --ink:#23272C; --ink-2:#5A6169; --ink-3:#8A9199;
+  --red:#B23A2E; --red-soft:#F9E9E6;
+  --green:#2F7D5B; --green-soft:#E8F2EC;
+  --blue:#3A6EA5; --blue-soft:#E9F0F8;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--paper); color:var(--ink);
+  line-height:1.65; font-size:15px;
+}
+h1,h2,h3,.serif{font-family:"Noto Serif SC","Songti SC","SimSun",serif}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{max-width:600px;margin:0 auto;padding:0 18px}
+
+/* ===== 顶部 Hero ===== */
+.hero{
+  position:relative; color:#F4F0E4;
+  background:var(--navy);
+  padding:30px 0 118px;
+  overflow:hidden;
+}
+.hero::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse 480px 220px at 85% -10%, rgba(201,162,39,.16), transparent 60%),
+    radial-gradient(ellipse 420px 260px at -10% 110%, rgba(58,110,165,.28), transparent 60%);
+}
+.hero .medal{position:absolute; right:-14px; top:-18px; width:120px; height:120px; opacity:.14; transform:rotate(14deg)}
+.hero-inner{position:relative; z-index:1}
+.badge{
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:12px; letter-spacing:.18em; color:#E3C877;
+  border:1px solid rgba(201,162,39,.55); border-radius:999px;
+  padding:4px 12px; margin-bottom:14px;
+}
+.badge .dot{width:5px;height:5px;border-radius:50%;background:#E3C877}
+.hero h1{
+  font-size:25px; line-height:1.4; font-weight:900; letter-spacing:.02em;
+  margin-bottom:10px;
+}
+.hero h1 .gold{color:#E3C877}
+.hero .sub{font-size:13.5px; color:#B9C7D4; line-height:1.7}
+.hero .sub b{color:#E7EDF3; font-weight:500}
+
+/* ===== 截止时间 ===== */
+.deadline-sec{position:relative; margin-top:-84px; z-index:2}
+.deadline-grid{display:grid; gap:14px}
+.dl-card{
+  background:var(--card); border:1px solid var(--line); border-top:3px solid var(--gold);
+  border-radius:12px; padding:16px 16px 14px;
+  display:grid; grid-template-columns:1fr auto; gap:2px 12px; align-items:center;
+}
+.dl-card.blue{border-top-color:var(--navy)}
+.dl-tag{
+  grid-column:1; justify-self:start;
+  font-size:12px; font-weight:700; letter-spacing:.08em;
+  color:#fff; background:var(--gold-deep); border-radius:4px; padding:1px 8px;
+}
+.dl-card.blue .dl-tag{background:var(--navy)}
+.dl-date{grid-column:1; margin-top:6px}
+.dl-date .big{font-family:"Noto Serif SC","Songti SC",serif; font-size:21px; font-weight:900}
+.dl-date .big em{font-style:normal; color:var(--gold-deep)}
+.dl-card.blue .dl-date .big em{color:var(--navy)}
+.dl-date .sub{font-size:12.5px; color:var(--ink-2); margin-top:2px}
+.countdown{grid-column:2; grid-row:1/3; text-align:right}
+.cd-label{font-size:11px; color:var(--ink-3); letter-spacing:.12em; margin-bottom:4px}
+.cd-nums{display:flex; gap:4px; justify-content:flex-end}
+.cd-nums span{
+  min-width:30px; padding:5px 3px; border-radius:6px;
+  background:var(--navy-deep); color:#F4E8C8;
+  font-size:15px; font-weight:700; font-variant-numeric:tabular-nums;
+  text-align:center; line-height:1.2;
+}
+.cd-nums .sep{background:none; color:var(--ink-3); padding:5px 0; min-width:0}
+.cd-nums em{font-style:normal; font-size:9px; display:block; color:#93A7B9; font-weight:500; margin-top:2px}
+.dl-card.blue .cd-nums span{background:var(--navy)}
+
+/* ===== 章节通用 ===== */
+section{margin-top:34px}
+.sec-head{display:flex; align-items:baseline; gap:10px; margin-bottom:14px}
+.sec-no{
+  font-family:"Noto Serif SC",serif; font-size:13px; font-weight:900; color:var(--gold-deep);
+  letter-spacing:.05em;
+}
+.sec-title{font-size:19px; font-weight:900; letter-spacing:.01em}
+.sec-line{flex:1; height:1px; background:var(--line); transform:translateY(-4px)}
+
+.card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px}
+.card + .card{margin-top:12px}
+
+/* ===== 申请资格与名额 ===== */
+.qual-grid{display:grid; gap:12px}
+.qual-card{border-left:3px solid var(--navy)}
+.qual-card.gold{border-left-color:var(--gold-deep)}
+.qual-name{display:flex; align-items:center; gap:8px; font-weight:700; font-size:15.5px}
+.qual-name .pill{
+  font-size:11px; font-weight:700; color:#fff; background:var(--navy);
+  border-radius:4px; padding:1px 7px; letter-spacing:.05em;
+}
+.qual-card.gold .qual-name .pill{background:var(--gold-deep)}
+.qual-list{margin-top:10px; display:grid; gap:7px}
+.qual-list li{list-style:none; display:flex; gap:9px; font-size:13.5px; color:#33383E}
+.qual-list li::before{
+  content:""; flex:none; width:5px; height:5px; border-radius:50%;
+  background:var(--navy); margin-top:9px;
+}
+.qual-card.gold .qual-list li::before{background:var(--gold-deep)}
+.quota-card{margin-top:12px; display:grid; grid-template-columns:118px 1fr; gap:4px 16px; align-items:center}
+.donut{width:112px; height:112px}
+.quota-info .q-title{font-size:15.5px; font-weight:700}
+.quota-info .q-num{font-family:"Noto Serif SC",serif; font-size:30px; font-weight:900; color:var(--gold-deep); line-height:1.25}
+.quota-info .q-num small{font-size:13px; color:var(--ink-3); font-weight:500}
+.quota-info .q-desc{font-size:12.5px; color:var(--ink-2); margin-top:4px}
+.warn-note{
+  margin-top:12px; background:var(--gold-soft); border:1px solid #EAD9A8;
+  color:#7A6218; border-radius:10px; padding:10px 13px; font-size:13px;
+  display:flex; gap:9px; align-items:flex-start;
+}
+.warn-note svg{flex:none; margin-top:2px}
+
+/* ===== 硬性条件与提示 ===== */
+.legend{font-size:12.5px; color:var(--ink-2); margin:-4px 0 12px}
+.hard{color:var(--red)}
+.tips-note{
+  margin-top:12px; background:var(--gold-soft); border:1px solid #EAD9A8;
+  color:#7A6218; border-radius:10px; padding:10px 13px; font-size:12.5px; line-height:1.7;
+}
+
+/* ===== 资格查询 ===== */
+#query .card{padding:18px 16px}
+.query-desc{font-size:13.5px; color:var(--ink-2); margin-bottom:14px}
+.q-form{display:grid; gap:10px}
+.q-field label{display:block; font-size:12.5px; color:var(--ink-2); margin-bottom:4px; font-weight:500}
+.q-field input{
+  width:100%; border:1px solid var(--line); border-radius:8px;
+  padding:11px 12px; font-size:15px; color:var(--ink);
+  background:#FBFAF6; font-family:inherit; outline:none;
+}
+.q-field input:focus{border-color:var(--gold); background:#fff; box-shadow:0 0 0 3px rgba(201,162,39,.15)}
+.q-btn{
+  margin-top:4px; width:100%; border:none; cursor:pointer;
+  background:var(--navy); color:#F4F0E4;
+  font-size:15px; font-weight:700; letter-spacing:.14em;
+  padding:12px; border-radius:8px; font-family:inherit;
+  transition:background .18s ease;
+}
+.q-btn:active{background:var(--navy-deep)}
+.q-btn[disabled]{opacity:.55; cursor:default}
+.q-result{display:none; margin-top:14px; border-radius:10px; padding:13px 15px; font-size:13.5px}
+.q-result.show{display:block}
+.q-result.ok{background:var(--green-soft); border:1px solid #C5DECE; color:#21583E}
+.q-result.no{background:var(--red-soft); border:1px solid #EDCEC8; color:#8F2E24}
+.q-result .r-lv{font-weight:700}
+.q-result .r-cls{display:block; font-size:12.5px; margin-top:3px; opacity:.85}
+.q-note{
+  margin-top:12px; padding-top:11px; border-top:1px dashed var(--line);
+  font-size:12px; color:var(--ink-3); line-height:1.7;
+}
+
+/* ===== 材料下载 ===== */
+.file-item{
+  display:flex; gap:12px; align-items:center;
+  border:1px solid var(--line); border-radius:10px; padding:12px 13px;
+  background:var(--card);
+}
+.file-item + .file-item{margin-top:10px}
+.file-icon{flex:none; width:40px; height:44px; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#fff}
+.file-icon.xls{background:#2F7D5B}
+.file-icon.doc{background:#3A6EA5}
+.file-icon.pdf{background:#B23A2E}
+.file-info{flex:1; min-width:0}
+.file-info .f-name{font-size:14px; font-weight:700; line-height:1.45}
+.file-info .f-meta{font-size:12px; color:var(--ink-2); margin-top:2px}
+.file-tag{
+  display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:.04em;
+  border-radius:4px; padding:1px 6px; margin-top:5px;
+}
+.file-tag.must{background:var(--gold-soft); color:#7A6218; border:1px solid #EAD9A8}
+.file-tag.see{background:var(--blue-soft); color:#2B5480; border:1px solid #CBDCEA}
+.file-btn{
+  flex:none; margin-left:2px; display:flex; flex-direction:column; align-items:center; gap:3px;
+  font-size:11px; color:var(--navy); font-weight:700;
+}
+.file-btn .btn-ic{
+  width:36px; height:36px; border-radius:50%;
+  background:var(--navy-soft); color:var(--navy);
+  display:flex; align-items:center; justify-content:center;
+  transition:background .18s ease;
+}
+.file-btn:active .btn-ic{background:var(--gold-soft); color:var(--gold-deep)}
+.check-tip{
+  margin-top:12px; background:var(--blue-soft); border:1px solid #CBDCEA;
+  color:#2B5480; border-radius:10px; padding:10px 13px; font-size:12.5px;
+  display:flex; gap:9px; align-items:flex-start; line-height:1.65;
+}
+.check-tip svg{flex:none; margin-top:2px}
+
+/* ===== 填写要点 ===== */
+.tips-card{padding:16px 16px 6px}
+.tips-h{display:flex; align-items:center; gap:8px; font-weight:700; font-size:14.5px; margin-bottom:10px}
+.tips-h .chip{font-size:11px; font-weight:700; color:#fff; border-radius:4px; padding:1px 8px; letter-spacing:.05em}
+.chip.gj{background:var(--gold-deep)}
+.chip.gl{background:var(--navy)}
+.chip.all{background:var(--ink-3)}
+.tips-card ul{margin-bottom:12px; display:grid; gap:6px}
+.tips-card li{list-style:none; display:flex; gap:8px; font-size:13px; color:#3A3F45; line-height:1.65}
+.tips-card li::before{content:""; flex:none; width:4px; height:4px; border-radius:50%; background:var(--gold-deep); margin-top:9px}
+.tips-card.gj li::before{background:var(--gold-deep)}
+.tips-card.gl li::before{background:var(--navy)}
+.tips-card.all li::before{background:var(--ink-3)}
+
+/* ===== 底部 ===== */
+footer{margin-top:40px; background:var(--navy-deep); color:#9FB2C3; padding:24px 0 34px}
+.foot-inner{max-width:600px; margin:0 auto; padding:0 18px; font-size:12.5px; line-height:1.9}
+footer .f-title{color:#E3C877; font-weight:700; font-size:13px; letter-spacing:.08em; margin-bottom:6px}
+footer .hr{height:1px; background:rgba(255,255,255,.12); margin:12px 0}
+
+@media (min-width:720px){
+  body{font-size:15.5px}
+  .wrap{max-width:640px}
+  .deadline-grid{grid-template-columns:1fr 1fr}
+  .foot-inner{max-width:640px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <svg class="medal" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+    <circle cx="32" cy="32" r="30" stroke="#C9A227" stroke-width="2.5"/>
+    <circle cx="32" cy="32" r="25" stroke="#C9A227" stroke-width="1.5"/>
+    <path d="M32 16l4.6 9.3 10.3 1.5-7.4 7.3 1.7 10.3L32 39.6l-9.2 4.8 1.7-10.3-7.4-7.3 10.3-1.5z" fill="#C9A227"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <span class="badge"><span class="dot"></span>2025—2026 学年 · 学生资助</span>
+    <h1>国家奖学金<span class="gold"> · </span>国家励志奖学金<br><span class="gold">评审指引</span></h1>
+    <p class="sub">面向 <b>24级全体同学</b>。请认真阅读本页全部内容：提交时间、申请资格、<br>资格查询、材料下载与填写要求，<b>先查资格、再备材料、按时提交</b>。</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== 01 截止时间 ===== -->
+  <section class="deadline-sec" id="deadline">
+    <div class="deadline-grid">
+      <div class="dl-card">
+        <span class="dl-tag">国家奖学金 · 附件1电子版</span>
+        <div class="dl-date">
+          <div class="big">9月21日 <em>周一</em></div>
+          <div class="sub">上午 09:00 前提交，逾期不受理</div>
+        </div>
+        <div class="countdown">
+          <div class="cd-label">距截止</div>
+          <div class="cd-nums">
+            <span id="cdgj-d">0<em>天</em></span><span class="sep">:</span>
+            <span id="cdgj-h">0<em>时</em></span><span class="sep">:</span>
+            <span id="cdgj-m">0<em>分</em></span><span class="sep">:</span>
+            <span id="cdgj-s">0<em>秒</em></span>
+          </div>
+        </div>
+      </div>
+      <div class="dl-card blue">
+        <span class="dl-tag">国家励志奖学金 · 附件2电子版</span>
+        <div class="dl-date">
+          <div class="big">9月22日 <em>周二</em></div>
+          <div class="sub">下午 17:00 前提交，逾期不受理</div>
+        </div>
+        <div class="countdown">
+          <div class="cd-label">距截止</div>
+          <div class="cd-nums">
+            <span id="cdgl-d">0<em>天</em></span><span class="sep">:</span>
+            <span id="cdgl-h">0<em>时</em></span><span class="sep">:</span>
+            <span id="cdgl-m">0<em>分</em></span><span class="sep">:</span>
+            <span id="cdgl-s">0<em>秒</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 02 申请资格与名额 ===== -->
+  <section id="quota">
+    <div class="sec-head">
+      <span class="sec-no">02</span><h2 class="sec-title">申请资格与名额</h2><span class="sec-line"></span>
+    </div>
+    <p class="legend">红色为<b>硬性申请条件</b>，任一不满足即不具备对应奖项申请资格。</p>
+    <div class="qual-grid">
+      <div class="card qual-card gold">
+        <div class="qual-name"><span class="pill">国励</span>国家励志奖学金</div>
+        <ul class="qual-list">
+          <li>已纳入 <b class="hard">2025-2026学年家庭经济困难学生认定名单</b>（特别困难 / 困难 / 一般困难）</li>
+          <li>2025-2026学年学业成绩与综合测评成绩排名均位于<b class="hard">班级前50%</b></li>
+          <li class="hard">无补考或重修科目</li>
+          <li>在校二年级以上（含二年级）品学兼优的在校生</li>
+        </ul>
+      </div>
+      <div class="card qual-card">
+        <div class="qual-name"><span class="pill">国奖</span>国家奖学金</div>
+        <ul class="qual-list">
+          <li>2025-2026学年学业成绩与综合测评成绩排名均位于<b class="hard">年级（或专业）前10%</b>（含10%）</li>
+          <li>社会实践、创新能力、综合素质等方面表现突出</li>
+          <li class="hard">无补考或重修科目</li>
+          <li>在校二年级以上（含二年级）品学兼优的在校生</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card quota-card">
+      <svg class="donut" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#EDE7D6" stroke-width="13"/>
+        <circle id="donutArc" cx="50" cy="50" r="40" fill="none" stroke="#C9A227" stroke-width="13"
+                stroke-linecap="round" stroke-dasharray="251.2" stroke-dashoffset="164.7"
+                transform="rotate(-90 50 50)"/>
+        <text x="50" y="46" text-anchor="middle" font-size="17" font-weight="900" fill="#A8841C" font-family="Noto Serif SC, serif">10</text>
+        <text x="50" y="63" text-anchor="middle" font-size="9" fill="#8A9199">个名额</text>
+      </svg>
+      <div class="quota-info">
+        <div class="q-title">24级 4、5、6 班</div>
+        <div class="q-num">10 <small>/ 29 个全校国励名额</small></div>
+        <div class="q-desc">本批次国励名额由学院按带班人数分配，本班名额有限，<br>符合条件请尽快申请。</div>
+      </div>
+    </div>
+
+    <div class="warn-note">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#A8841C" stroke-width="1.8"/><path d="M12 7.5V13" stroke="#A8841C" stroke-width="1.8"/><circle cx="12" cy="16.4" r="1" fill="#A8841C"/></svg>
+      <span><b>国家奖学金与国家励志奖学金不能同时兼得</b>；国奖名额以学院评审公示为准，国励申请者须同时满足困难认定与成绩排名双重条件。</span>
+    </div>
+  </section>
+
+  <!-- ===== 03 贫困认定资格查询 ===== -->
+  <section id="query">
+    <div class="sec-head">
+      <span class="sec-no">03</span><h2 class="sec-title">贫困认定资格查询</h2><span class="sec-line"></span>
+    </div>
+    <div class="card">
+      <p class="query-desc">输入<b>本人姓名</b>与<b>身份证号码后四位</b>，查询是否在 2025-2026 学年国家困难生认定名单内、以及对应的认定等级。不在名单内的同学<b>不具备国家励志奖学金申请资格</b>。</p>
+      <div class="q-form">
+        <div class="q-field">
+          <label for="qName">姓名</label>
+          <input id="qName" type="text" placeholder="请输入本人姓名" autocomplete="off" maxlength="30">
+        </div>
+        <div class="q-field">
+          <label for="qId4">身份证号码后四位</label>
+          <input id="qId4" type="text" placeholder="如：5524（末位为X请大写）" autocomplete="off" maxlength="4" inputmode="text">
+        </div>
+        <button class="q-btn" id="qBtn">查 询</button>
+      </div>
+      <div class="q-result" id="qResult" role="status" aria-live="polite"></div>
+      <p class="q-note">提示：查询数据以「2025-2026学年国家困难生认定名单」为唯一来源，结果仅供本人核实使用，请勿截图外传。认定名单信息属于个人隐私，请同学们互相尊重。</p>
+    </div>
+  </section>
+
+  <!-- ===== 04 材料下载 ===== -->
+  <section id="download">
+    <div class="sec-head">
+      <span class="sec-no">04</span><h2 class="sec-title">材料下载</h2><span class="sec-line"></span>
+    </div>
+
+    <div class="file-item">
+      <div class="file-icon xls">
+        <svg width="22" height="26" viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M3 1h13l5 5v21H3V1z" stroke="#fff" stroke-width="1.6"/><path d="M16 1v5h5" stroke="#fff" stroke-width="1.6"/><path d="M7 14h10M7 18h10M7 22h7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="file-info">
+        <div class="f-name">附件1：高等学校国家奖学金申请审批表</div>
+        <div class="f-meta">Excel 模板 · 国奖申请填写并提交</div>
+        <span class="file-tag must">国奖必下 · 电子版</span>
+      </div>
+      <a class="file-btn" href="assets/附件1-高等学校国家奖学金申请审批表.xls" download="附件1-高等学校国家奖学金申请审批表.xls">
+        <span class="btn-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        下载
+      </a>
+    </div>
+
+    <div class="file-item">
+      <div class="file-icon xls">
+        <svg width="22" height="26" viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M3 1h13l5 5v21H3V1z" stroke="#fff" stroke-width="1.6"/><path d="M16 1v5h5" stroke="#fff" stroke-width="1.6"/><path d="M7 14h10M7 18h10M7 22h7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="file-info">
+        <div class="f-name">附件2：本专科励志奖学金申请名单</div>
+        <div class="f-meta">Excel 模板 · 国励申请填写并提交</div>
+        <span class="file-tag must">国励必下 · 电子版</span>
+      </div>
+      <a class="file-btn" href="assets/附件2-本专科励志奖学金申请名单.xls" download="附件2-本专科励志奖学金申请名单.xls">
+        <span class="btn-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        下载
+      </a>
+    </div>
+
+    <div class="file-item">
+      <div class="file-icon doc">
+        <svg width="22" height="26" viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M3 1h13l5 5v21H3V1z" stroke="#fff" stroke-width="1.6"/><path d="M16 1v5h5" stroke="#fff" stroke-width="1.6"/><path d="M7 16h10M7 20h10M7 12h4" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="file-info">
+        <div class="f-name">附件3：附件1、附件2的填写说明与要求</div>
+        <div class="f-meta">Word 文档 · 填表前务必通读</div>
+        <span class="file-tag see">两类必看</span>
+      </div>
+      <a class="file-btn" href="assets/附件3-附件1附件2填写说明.doc" download="附件3-附件1附件2填写说明.doc">
+        <span class="btn-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        下载
+      </a>
+    </div>
+
+    <div class="file-item">
+      <div class="file-icon pdf">
+        <svg width="22" height="26" viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M3 1h13l5 5v21H3V1z" stroke="#fff" stroke-width="1.6"/><path d="M16 1v5h5" stroke="#fff" stroke-width="1.6"/><circle cx="8.5" cy="16" r="4" stroke="#fff" stroke-width="1.5"/><path d="M8.5 12v8M8.5 12L12 16l-3.5 4M15 14l-2 4M15 14l2 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="file-info">
+        <div class="f-name">学工〔2026〕8号 评选工作通知</div>
+        <div class="f-meta">PDF 文件 · 官方评选办法与名额分配</div>
+        <span class="file-tag see">参考文件</span>
+      </div>
+      <a class="file-btn" href="assets/8号文件-评选工作通知.pdf" download="学工〔2026〕8号-评选工作通知.pdf">
+        <span class="btn-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        下载
+      </a>
+    </div>
+
+    <div class="check-tip">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#3A6EA5" stroke-width="1.8"/><path d="M8.5 12.2l2.4 2.4 4.8-5" stroke="#3A6EA5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>红检查要求：</b>附件一（国奖审批表）无红检查要求；<b>附件二（国励申请名单）</b>填写完成后，须点击模板内「开始检查」并通过检查（未通过项会标红提示），<b>通过后方可提交给本班班长</b>；班长汇总全部名单后，也须再次完成检查。</span>
+    </div>
+  </section>
+
+  <!-- ===== 05 填写要点 ===== -->
+  <section id="tips">
+    <div class="sec-head">
+      <span class="sec-no">05</span><h2 class="sec-title">填写要点速查</h2><span class="sec-line"></span>
+    </div>
+
+    <div class="card tips-card gj">
+      <div class="tips-h"><span class="chip gj">国奖</span>附件1（申请审批表）填写要点</div>
+      <ul>
+        <li>成绩排名总人数与必修课门数须一致，且为2025-2026学年本年度必修课</li>
+        <li>「是否实行综合考评排名」填「是」；综合考评排名总人数与成绩排名总人数一致</li>
+        <li>获奖时间限 2025年9月—2026年8月，奖项、日期、颁奖单位须与证书一致</li>
+        <li>申请理由100—300字（建议250字左右）、第一人称、不写家庭经济情况；推荐理由、院系意见50—150字</li>
+        <li>姓名、出生年月、政治面貌等基本信息须与身份证、其他栏目前后一致</li>
+      </ul>
+    </div>
+
+    <div class="card tips-card gl">
+      <div class="tips-h"><span class="chip gl">国励</span>附件2（申请名单）填写要点</div>
+      <ul>
+        <li>成绩与综测排名均位于班级前50%；「成绩排名总人数」「综合考评排名总人数」建议填<b>班级总人数</b>（非专业总人数）</li>
+        <li>必修课及格门数与必修课门数一致，为2025-2026学年必修课</li>
+        <li>「是否实行综合考评排名」填「是」；综合考评排名总人数与成绩排名总人数一致</li>
+        <li>实发金额填「6000」；发放日期由学院统一填写</li>
+      </ul>
+    </div>
+
+    <div class="card tips-card all">
+      <div class="tips-h"><span class="chip all">通用</span>共同注意事项</div>
+      <ul>
+        <li>国奖、国励的成绩与综测均以<b>学分加权平均分</b>为排名标准</li>
+        <li>不得涂改、无错别字，年度等数字务必核对准确；不符合要求会被退回重新填写</li>
+        <li>填表前先下载附件3《填写说明与要求》通读全文，再动手填写</li>
+      </ul>
+    </div>
+    <div class="tips-note">以上填写要点速查<b>仅列明部分情况</b>，完整填写要求请下载<b>附件3《填写说明与要求》</b>仔细阅读后，再按模板规范填写。</div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="f-title">评审说明</div>
+    <p>本页面信息依据学工〔2026〕8号通知与学院群通知整理，仅供24级同学了解评审安排使用；如有疑问，请及时联系你的辅导员。最终评审结果以学院公示为准。</p>
+    <div class="hr"></div>
+  </div>
+</footer>
+
+<script>
+/* 贫困认定名单查询数据（仅含姓名、身份证后四位、认定等级、班级，不含完整证件号）
+   数据源：2025-2026学年国家困难生认定名单 */
+const QR = [
+[["刘珊", "5524", "特别困难", "2023专科护理02班"],["张洁曼", "3322", "特别困难", "2023专科护理02班"],["陈婷婷", "3342", "特别困难", "2023专科护理02班"],["黄锦滔", "3538", "特别困难", "2023专科护理(涉外)01班"],["陈慧芝", "5722", "特别困难", "2023专科护理(涉外)01班"],["苏秀珍", "2642", "特别困难", "2023专科护理(涉外)01班"],["黄雨湘", "132X", "特别困难", "2023专科护理(涉外)01班"],["陈秋艳", "7722", "特别困难", "2023专科护理(涉外)01班"],["茹连美", "2823", "特别困难", "2023专科助产01班"],["梁嘉瑶", "1927", "特别困难", "2023专科助产01班"],["李小微", "2923", "特别困难", "2023专科助产01班"],["曾月娇", "152X", "特别困难", "2023专科助产01班"],["江婵萍", "2448", "特别困难", "2023专科助产01班"],["胡雯娟", "2542", "特别困难", "2024专科护理05班"],["曾惠楚", "4440", "特别困难", "2024专科护理05班"],["张玉凤", "4827", "特别困难", "2024专科护理05班"],["吴梦哲", "2620", "特别困难", "2024专科护理05班"],["石春蕾", "0501", "特别困难", "2024专科护理05班"],["陈芷晴", "0446", "特别困难", "2024专科护理05班"],["姜洪薪", "8222", "特别困难", "2025专科护理02班"],["郭纯香", "5541", "困难", "2023专科健康大数据管理与服务01班"],["黎欣怡", "0421", "困难", "2023专科健康大数据管理与服务01班"],["梁栩乔", "0829", "困难", "2023专科健康大数据管理与服务01班"],["何婷婷", "7780", "困难", "2023专科健康管理01班"],["牟灵飞", "0212", "困难", "2023专科健康管理01班"],["罗淑铃", "5326", "困难", "2024专科预防医学01班"],["黄紫茹", "0822", "一般困难", "2024专科医学检验技术02班"],["李卓燕", "0645", "一般困难", "2024专科医学检验技术01班"],["李思睿", "0539", "一般困难", "2024专科医学检验技术02班"],["刘楚娴", "0723", "一般困难", "2024专科医学检验技术02班"],["李如婷", "288X", "一般困难", "2024专科医学影像技术01班"],["梁炜娇", "2861", "一般困难", "2024专科医学检验技术01班"],["吴杭诺", "1029", "一般困难", "2024专科医学检验技术01班"],["程炫邦", "1134", "一般困难", "2025本科医学影像技术01班"],["邱沁仪", "2925", "一般困难", "2025本科医学影像技术01班"],["吴勇涛", "3176", "一般困难", "2025本科医学影像技术02班"],["李诗婷", "392X", "一般困难", "2025本科医学影像技术02班"]],
+[["许悦千", "2721", "一般困难", "2025本科医学影像技术02班"],["罗雪梅", "1148", "一般困难", "2025专科医学检验技术01班"],["吴力", "0013", "一般困难", "2025专科医学检验技术01班"],["赖秋宇", "042X", "特别困难", "2024专科健康管理01班"],["肖俊翰", "011X", "特别困难", "2024专科健康管理01班"],["谢仁阿依·吐尔逊江", "1924", "特别困难", "2025专科预防医学02班"],["李梦雅", "122X", "特别困难", "2025专科预防医学02班"],["陈可欣", "4722", "特别困难", "2025专科预防医学02班"],["邹敏健", "4220", "特别困难", "2025专科预防医学02班"],["钱海琳", "542X", "特别困难", "2025专科预防医学02班"],["李淑桦", "7066", "特别困难", "2025专科预防医学02班"],["陈惠怡", "4624", "特别困难", "2025专科预防医学02班"],["朱泳茵", "002X", "特别困难", "2025专科预防医学01班"],["王芯凌", "4421", "特别困难", "2025专科预防医学01班"],["陈嘉渝", "2228", "特别困难", "2025专科预防医学01班"],["柯雪静", "6588", "特别困难", "2025专科智慧健康养老服务与管理01班"],["詹翊桦", "092X", "特别困难", "2025高职药学3+证书01班"],["王金英", "4946", "特别困难", "2025高职药学3+证书01班"],["何姣姣", "0428", "特别困难", "2025高职药学3+证书01班"],["黄双凤", "5748", "特别困难", "2025专科中药学01班"],["谭秀韵", "2643", "特别困难", "2025专科中药学02班"],["邓晓燕", "8343", "特别困难", "2025专科中药学01班"],["李滔", "5118", "特别困难", "2025本科中药学01班"],["贺程玲", "3363", "特别困难", "2025本科中药学01班"],["周鑫", "5615", "特别困难", "2025专科中药学02班"],["曹君如", "3444", "特别困难", "2025本科中药学02班"],["黄子明", "113X", "特别困难", "2025本科中药学01班"],["汤桂香", "3928", "特别困难", "2025专科药学01班"],["韦月华", "1440", "特别困难", "2025专科药学01班"],["温桂芬", "1329", "特别困难", "2025专科药学01班"],["陈家楠", "3057", "特别困难", "2023专科临床医学02班"],["钟家龙", "3033", "特别困难", "2023专科临床医学02班"],["陈林欣", "1146", "特别困难", "2023专科临床医学07班"],["李灵", "6328", "特别困难", "2023专科临床医学07班"],["梁文静", "5044", "特别困难", "2023专科临床医学07班"],["潘欣烁", "3115", "特别困难", "2023专科临床医学07班"],["王丹媛", "1627", "特别困难", "2023专科临床医学07班"]],
+[["张静", "2244", "特别困难", "2023专科临床医学02班"],["侯桂英", "2609", "特别困难", "2023专科临床医学07班"],["郭怡欣", "376X", "特别困难", "2023专科临床医学06班"],["陈静宜", "5728", "特别困难", "2023专科临床医学03班"],["许海龙", "8037", "特别困难", "2023专科临床医学04班"],["邓宝怡", "6126", "特别困难", "2023专科临床医学06班"],["赵文菊", "1863", "特别困难", "2023专科临床医学03班"],["黄月秋", "4929", "特别困难", "2023专科助产01班"],["许敏桐", "3522", "特别困难", "2024高职护理三二分段06班"],["李喜晔", "2248", "特别困难", "2024高职护理三二分段06班"],["苏琪", "2147", "特别困难", "2023高职护理3+证书（三年制）1班"],["杨咏琪", "0421", "特别困难", "2024高职护理三二分段06班"],["范小飞", "2463", "特别困难", "2023高职护理3+证书（三年制）2班"],["黄诗颖", "4066", "特别困难", "2024高职护理三二分段06班"],["吴妍玲", "4028", "特别困难", "2023高职护理3+证书（三年制）1班"],["曾晓晴", "3442", "特别困难", "2024高职护理三二分段05班"],["陈秋颖", "4567", "特别困难", "2024高职护理三二分段06班"],["胡榕", "0362", "特别困难", "2023高职护理3+证书（三年制）1班"],["管伟添", "0930", "特别困难", "2024高职护理三二分段06班"],["林雯莹", "3084", "特别困难", "2024高职护理三二分段05班"],["谢世铭", "3872", "困难", "2024专科预防医学02班"],["赖宏志", "2914", "困难", "2024专科预防医学02班"],["李沁瑶", "0028", "困难", "2025专科预防医学02班"],["何采丽", "606X", "困难", "2025专科智慧健康养老服务与管理01班"],["许湘玲", "4225", "困难", "2025本科食品卫生与营养学01班"],["林坤鑫", "0610", "困难", "2025高职智慧健康养老服务与管理3+证书01班"],["黎敏妍", "0020", "困难", "2025高职智慧健康养老服务与管理3+证书01班"],["林黎欣", "5626", "困难", "2023专科中医学01班"],["潘炳世", "421X", "困难", "2023专科中医学01班"],["陈逸涵", "512X", "困难", "2023专科中医学02班"],["詹佳怡", "122X", "困难", "2023专科中医学02班"],["李秋昀", "6648", "困难", "2023专科中医学02班"],["肖亮钊", "211X", "困难", "2023专科中医学02班"],["胡淑莊", "1041", "一般困难", "2025专科医学检验技术01班"],["刘午", "021X", "一般困难", "2025专科医学检验技术02班"],["申语梦", "4164", "一般困难", "2025专科医学检验技术02班"]],
+[["陈琴", "0269", "一般困难", "2025专科医学检验技术02班"],["宁玉瑶", "0122", "一般困难", "2025专科医学检验技术02班"],["廖金燕", "1569", "一般困难", "2025专科医学检验技术02班"],["刘林峰", "717X", "一般困难", "2025专科医学检验技术02班"],["潘柳如", "0026", "一般困难", "2025专科医学检验技术02班"],["刁玲", "6288", "一般困难", "2025专科医学影像技术01班"],["陈诗妮", "404X", "一般困难", "2025专科医学影像技术01班"],["黄雨荧", "586X", "一般困难", "2025专科医学影像技术01班"],["贺钰珊", "2443", "一般困难", "2025专科医学影像技术02班"],["黄耿财", "2152", "一般困难", "2025专科医学影像技术02班"],["曾彩怡", "6428", "特别困难", "2025专科健康管理01班"],["梁恩嫦", "3624", "特别困难", "2025专科健康管理01班"],["蔡晓婷", "3108", "特别困难", "2025专科健康管理01班"],["比拉力·努尔托合提", "0815", "特别困难", "2025专科健康管理01班"],["谭诗彤", "6988", "特别困难", "2025专科健康管理01班"],["陈方钰", "242X", "特别困难", "2025本科食品卫生与营养学02班"],["朱焯群", "2127", "特别困难", "2025本科食品卫生与营养学02班"],["莫子婵", "0649", "特别困难", "2025专科智慧健康养老服务与管理01班"],["缪柳银", "3782", "特别困难", "2025专科智慧健康养老服务与管理01班"],["许冰雁", "3325", "特别困难", "2025专科智慧健康养老服务与管理01班"],["陈玉英", "6527", "特别困难", "2025专科健康管理01班"],["陈雅莉", "3681", "特别困难", "2025专科健康管理01班"],["梁馨以", "5421", "特别困难", "2025本科食品卫生与营养学02班"],["梁颖慈", "1824", "特别困难", "2023专科医学检验技术01班"],["范栩恩", "2868", "特别困难", "2025专科药学01班"],["徐学灵", "0322", "特别困难", "2025专科药学01班"],["梁晓敏", "3729", "特别困难", "2025专科药学01班"],["林晓纯", "4026", "特别困难", "2025专科药学01班"],["陈诗婷", "2523", "特别困难", "2025专科药学01班"],["雷婕", "6526", "特别困难", "2025专科药学01班"],["黄渝恒", "1716", "特别困难", "2025专科药学02班"],["黄梓梅", "412X", "特别困难", "2025专科药学02班"],["陈亿林", "201X", "特别困难", "2025专科药学02班"],["陈淑琴", "018X", "特别困难", "2025专科药学02班"],["彭梓岚", "088X", "特别困难", "2025高职药学三二分段01班"],["柯立仪", "2024", "特别困难", "2025高职药学三二分段01班"]],
+[["李晨曦", "4263", "特别困难", "2025高职药学三二分段01班"],["陈菲楠", "692X", "特别困难", "2023专科临床医学06班"],["周巧灵", "2724", "特别困难", "2023专科临床医学06班"],["余文倩", "2527", "特别困难", "2023专科临床医学05班"],["邓诗美", "1449", "特别困难", "2023专科临床医学04班"],["董燕梅", "0625", "特别困难", "2023专科临床医学05班"],["王舒柳", "2264", "特别困难", "2023专科临床医学06班"],["詹潸潸", "0663", "特别困难", "2023专科临床医学04班"],["易航", "5322", "特别困难", "2023专科临床医学05班"],["黄真", "5918", "特别困难", "2023专科临床医学06班"],["刘萍", "2225", "特别困难", "2023专科临床医学03班"],["巫梓锟", "381X", "特别困难", "2023专科临床医学04班"],["唐晓玲", "4840", "特别困难", "2023专科临床医学04班"],["丘文静", "4528", "特别困难", "2023专科临床医学06班"],["张晏婷", "6027", "特别困难", "2023专科临床医学03班"],["老宝仪", "3246", "特别困难", "2023高职护理3+证书（三年制）1班"],["王思羽", "3862", "特别困难", "2023高职护理3+证书（三年制）2班"],["张玉琪", "0827", "特别困难", "2023高职护理3+证书（三年制）2班"],["唐晓燕", "8620", "特别困难", "2023高职护理3+证书（三年制）2班"],["胡嘉", "0063", "特别困难", "2024高职护理三二分段05班"],["黄文希", "2228", "特别困难", "2024高职护理三二分段05班"],["李宝怡", "1529", "特别困难", "2024高职护理三二分段06班"],["林忆莹", "3522", "特别困难", "2024高职护理三二分段05班"],["潘柔菲", "0027", "特别困难", "2023高职护理3+证书（三年制）2班"],["朱思霖", "5926", "特别困难", "2024高职护理三二分段05班"],["黄微", "7786", "特别困难", "2023高职护理3+证书（三年制）1班"],["成惠珊", "7824", "特别困难", "2023高职护理3+证书（三年制）2班"],["胡珮绚", "0048", "特别困难", "2024专科护理04班"],["艾程程", "2509", "特别困难", "2024专科护理02班"],["刘欢欢", "3788", "困难", "2023专科中医学04班"],["江家润", "0030", "困难", "2023专科中医学04班"],["李静", "6701", "困难", "2023专科针灸推拿01班"],["岑靖琳", "5122", "困难", "2023专科康复治疗技术01班"],["列碧霞", "1720", "困难", "2023专科康复治疗技术01班"],["黄本龙", "3436", "困难", "2023专科康复治疗技术01班"],["杨慧秋", "6703", "困难", "2023专科中医骨伤01班"]],
+[["韦倩欣", "5120", "困难", "2023专科康复治疗技术01班"],["刘振铭", "1314", "困难", "2023专科康复治疗技术01班"],["张备", "2920", "困难", "2023专科康复治疗技术01班"],["陈欣欣", "1923", "困难", "2024专科康复治疗技术01班"],["巫慧如", "572X", "困难", "2024专科中医骨伤01班"],["廖淑媛", "2326", "困难", "2024专科中医骨伤01班"],["郑雪榕", "494X", "一般困难", "2025专科医学影像技术02班"],["苏卓琳", "5120", "一般困难", "2025专科医学影像技术02班"],["陈欣琪", "6022", "一般困难", "2025专科医学检验技术01班"],["罗婕芸", "2444", "一般困难", "2025专科医学影像技术01班"],["陈晓茵", "8326", "一般困难", "2023专科药品经营与管理01班"],["张晓雯", "4329", "一般困难", "2024本科药学02班"],["梁慧敏", "9068", "一般困难", "2024本科药学05班"],["冼楚仪", "3526", "一般困难", "2024本科药学04班"],["周培琼", "3828", "一般困难", "2024本科药学01班"],["刘东南", "6014", "一般困难", "2025本科中药学02班"],["黄晓彤", "5527", "一般困难", "2025本科中药学02班"],["陈楚翘", "3520", "一般困难", "2025专科中药学01班"],["刘原飞", "3415", "一般困难", "2025专科药学02班"],["林心晴", "1468", "特别困难", "2025本科食品卫生与营养学01班"],["梁慧煊", "4323", "特别困难", "2025本科食品卫生与营养学01班"],["李永志", "437X", "特别困难", "2025本科食品卫生与营养学01班"],["任雨杏", "5427", "特别困难", "2025高职智慧健康养老服务与管理3+证书01班"],["岑维雄", "0412", "特别困难", "2023专科中医学01班"],["吴晓敏", "432X", "特别困难", "2023专科中医学01班"],["梁志兴", "4034", "特别困难", "2023专科中医学01班"],["徐冬扬", "4611", "特别困难", "2023专科中医学02班"],["卢丽合", "2124", "特别困难", "2023专科中医学02班"],["练文洁", "2723", "特别困难", "2023专科中医学02班"],["徐金带", "1542", "特别困难", "2023专科中医学02班"],["孙钦贤", "001X", "特别困难", "2023专科中医学02班"],["马思妍", "0021", "特别困难", "2023专科中医学02班"],["贺思蓉", "1968", "特别困难", "2023专科医学检验技术02班"],["叶镇丽", "1542", "特别困难", "2023专科医学影像技术01班"],["骆贝贝", "5726", "特别困难", "2023专科医学影像技术01班"],["黎荧伶", "6840", "特别困难", "2023专科医学检验技术01班"],["苗洢敏", "0046", "特别困难", "2023专科医学影像技术01班"]],
+[["吴焕钿", "0321", "特别困难", "2023专科医学影像技术01班"],["李美婷", "4829", "特别困难", "2023专科医学检验技术02班"],["关明月", "2728", "特别困难", "2023专科医学检验技术02班"],["陈泺霖", "5123", "特别困难", "2023专科医学影像技术01班"],["穆娜", "0262", "特别困难", "2023专科医学影像技术01班"],["胡海洋", "0429", "特别困难", "2024专科医学影像技术02班"],["李观明", "6858", "特别困难", "2024专科医学影像技术01班"],["万智慧", "092X", "特别困难", "2024专科医学检验技术02班"],["张晓珊", "6320", "特别困难", "2025高职药学三二分段02班"],["欧阳秋和", "1515", "特别困难", "2025高职药学三二分段02班"],["郭心妍", "1748", "特别困难", "2025高职药学三二分段02班"],["梁梓炎", "3227", "特别困难", "2025高职药学三二分段03班"],["高芷君", "0243", "特别困难", "2025高职药学三二分段03班"],["陈宣润", "1015", "特别困难", "2025高职药学三二分段03班"],["潘敏宜", "2042", "特别困难", "2025高职药学三二分段03班"],["欧沛棋", "4747", "特别困难", "2025高职药学三二分段04班"],["冯韵儿", "5028", "特别困难", "2025高职药学三二分段04班"],["江诗敏", "3227", "特别困难", "2025高职药学三二分段04班"],["张欣怡", "174X", "特别困难", "2023专科中药学01班"],["吴钰仪", "2644", "特别困难", "2023专科中药学01班"],["陈怡静", "1587", "特别困难", "2023专科中药学01班"],["詹嘉琪", "1906", "特别困难", "2023专科中药学01班"],["徐慧倩", "3342", "特别困难", "2023专科临床医学06班"],["周玮玲", "6728", "特别困难", "2023专科临床医学04班"],["陈琪燃", "0063", "特别困难", "2023专科临床医学04班"],["苏俊瑜", "1455", "特别困难", "2023专科临床医学05班"],["李国晖", "3131", "特别困难", "2023专科临床医学06班"],["刘珍莹", "2323", "特别困难", "2023专科临床医学04班"],["黎清盛", "3213", "特别困难", "2023专科临床医学03班"],["黄锐纯", "3768", "特别困难", "2023专科临床医学04班"],["许巧如", "8225", "特别困难", "2024专科临床医学05班"],["谢宏锐", "5091", "特别困难", "2024专科临床医学07班"],["李想", "5112", "特别困难", "2024专科临床医学10班"],["程钰烨", "4342", "特别困难", "2025专科临床医学10班"],["黄婷", "628X", "特别困难", "2023专科口腔医学03班"],["刘文兰", "4845", "特别困难", "2023专科口腔医学03班"]],
+[["陈燕玲", "0625", "特别困难", "2024专科护理03班"],["伦锦欣", "0023", "特别困难", "2024专科护理03班"],["索德荣", "0021", "特别困难", "2024专科护理03班"],["焦佳瑞", "2769", "特别困难", "2024专科护理03班"],["陈晓晴", "1727", "特别困难", "2024专科护理03班"],["余倩敏", "1360", "特别困难", "2024专科护理02班"],["胡安婷", "0020", "特别困难", "2024专科护理01班"],["林丽婷", "2284", "特别困难", "2024专科护理02班"],["谭颖怡", "3329", "特别困难", "2024专科护理02班"],["梁翠泳", "3041", "特别困难", "2024专科护理03班"],["林翠丽", "5864", "特别困难", "2024专科护理02班"],["吴希", "2946", "特别困难", "2024专科护理03班"],["邓晓桐", "6161", "特别困难", "2024专科护理02班"],["杨华娣", "6023", "特别困难", "2024专科护理02班"],["陈紫睿", "7263", "困难", "2024专科中医学02班"],["林敏聪", "1741", "困难", "2024专科中医学03班"],["苏欣", "0045", "困难", "2024专科中医学04班"],["林佳桐", "0028", "困难", "2024专科中医学07班"],["许静怡", "6026", "困难", "2024专科中医学07班"],["刘锦欣", "0181", "困难", "2024专科中医学07班"],["章沐钦", "413X", "困难", "2024专科中医学05班"],["邓瑶", "0129", "困难", "2025高职康复治疗技术三二分段01班"],["邓绮莹", "2386", "困难", "2025高职康复治疗技术三二分段01班"],["莫欣怡", "3449", "困难", "2025高职康复治疗技术三二分段01班"],["胡明敬", "1656", "困难", "2025专科中医学01班"],["韦姿杞", "0549", "困难", "2025专科中医学01班"],["陈漳", "1519", "困难", "2025专科中医学04班"],["翁海荣", "5595", "困难", "2025专科中医学04班"],["陈涛枝", "3145", "一般困难", "2025高职药学三二分段04班"],["曹杼慧", "2926", "一般困难", "2024专科药学02班"],["程湘婷", "3624", "一般困难", "2024专科药学02班"],["董艳", "5927", "一般困难", "2024专科药学03班"],["张心媚", "7426", "一般困难", "2024专科药学03班"],["阮彩云", "0646", "一般困难", "2024专科药品经营与管理01班"],["郑钶浩", "4918", "一般困难", "2024专科药品经营与管理02班"],["余柔妍", "154X", "一般困难", "2025专科药品经营与管理01班"],["蔡茵", "1425", "一般困难", "2025专科药品经营与管理01班"],["叶巧茵", "0024", "一般困难", "2025专科药品经营与管理02班"]],
+[["麦致源", "0030", "一般困难", "2025专科临床医学05班"],["彭春莲", "4766", "一般困难", "2025专科临床医学06班"],["王贤", "711X", "一般困难", "2025专科临床医学07班"],["白昊莉", "4921", "特别困难", "2023专科中医学03班"],["刘思敏", "0048", "特别困难", "2023专科中医学03班"],["陈永杰", "591X", "特别困难", "2023专科中医学04班"],["吕绮程", "4525", "特别困难", "2023专科中医学04班"],["童娅丽", "0421", "特别困难", "2023专科中医学04班"],["林泳", "007X", "特别困难", "2023专科中医学04班"],["胡钦南", "4255", "特别困难", "2023专科中医学04班"],["柯诗羽", "2820", "特别困难", "2023专科中医学04班"],["陈丹丹", "2327", "特别困难", "2023专科中医学04班"],["植奇武", "5770", "特别困难", "2023专科中医学04班"],["金海逸", "0648", "特别困难", "2023专科针灸推拿01班"],["刘友清", "210X", "特别困难", "2023专科针灸推拿01班"],["陈美瑜", "2400", "特别困难", "2023专科针灸推拿01班"],["陈紫棋", "4363", "特别困难", "2024专科医学检验技术01班"],["吴紫琪", "2484", "特别困难", "2024专科医学检验技术01班"],["卓浩苗", "8052", "特别困难", "2024专科医学检验技术01班"],["王佳杰", "0539", "特别困难", "2024专科医学检验技术02班"],["黎玲", "028X", "特别困难", "2024专科医学检验技术02班"],["林晓俭", "782X", "特别困难", "2024专科医学影像技术02班"],["陈佳淇", "1822", "特别困难", "2024专科医学影像技术01班"],["邵一洋", "1727", "特别困难", "2024专科医学影像技术01班"],["陈嘉琪", "3922", "特别困难", "2024专科医学影像技术01班"],["韩乐", "3015", "特别困难", "2024专科医学影像技术02班"],["骆雅婷", "0028", "特别困难", "2024专科医学影像技术01班"],["谢佳欣", "684X", "特别困难", "2024专科医学影像技术01班"],["吴馨恩", "2122", "特别困难", "2024专科医学影像技术01班"],["黄汇", "5621", "特别困难", "2024专科医学影像技术01班"],["刘妍君", "0628", "特别困难", "2024专科药学01班"],["吴文杰", "1832", "特别困难", "2024专科药学01班"],["唐湘", "6864", "特别困难", "2024专科药学01班"],["贾岱彬", "0053", "特别困难", "2024专科药学01班"],["叶苇羡", "1267", "特别困难", "2024专科药学01班"],["杨莹莹", "4023", "特别困难", "2024专科药学02班"],["林燕真", "1345", "特别困难", "2024专科药学03班"]],
+[["邹金洁", "1763", "特别困难", "2024专科药学03班"],["尤彩蝶", "5887", "特别困难", "2024专科药学03班"],["陈敏仪", "4029", "特别困难", "2024专科药学04班"],["郑艺妍", "3022", "特别困难", "2024专科药学04班"],["陈思煊", "1903", "特别困难", "2024专科药学04班"],["温黎华", "5548", "特别困难", "2024专科药品经营与管理01班"],["王笑霞", "0420", "特别困难", "2023专科口腔医学01班"],["陈博", "4411", "特别困难", "2023专科口腔医学01班"],["黄月林", "3328", "特别困难", "2023专科口腔医学01班"],["林思靖", "4842", "特别困难", "2023专科口腔医学05班"],["曾明柔", "0544", "特别困难", "2023专科口腔医学03班"],["杨宏", "7904", "特别困难", "2023专科口腔医学05班"],["梁朝阳", "7227", "特别困难", "2023专科口腔医学04班"],["张义梦", "3129", "特别困难", "2023专科口腔医学04班"],["李泽曼", "3122", "特别困难", "2023专科口腔医学03班"],["刘贤菊", "124X", "特别困难", "2023专科口腔医学03班"],["朱婉琬", "3726", "特别困难", "2023专科口腔医学01班"],["高亿琦", "1032", "特别困难", "2023专科口腔医学04班"],["康思蒙", "1383", "特别困难", "2023专科口腔医学04班"],["巫敏琪", "0320", "特别困难", "2023专科口腔医学03班"],["吴湘雨", "152X", "特别困难", "2024专科护理03班"],["马文学", "2890", "特别困难", "2024专科护理01班"],["郑欣琪", "4968", "特别困难", "2024专科助产01班"],["黎杰运", "6813", "特别困难", "2024专科助产01班"],["李金梅", "7163", "特别困难", "2024专科助产01班"],["张天群", "1226", "特别困难", "2024专科助产01班"],["林晓勤", "2444", "特别困难", "2024专科助产01班"],["杜润凤", "662X", "特别困难", "2024专科助产01班"],["黄楚檀", "152X", "特别困难", "2024专科助产02班"],["毛翠玉", "5365", "特别困难", "2024专科助产02班"],["郭晓明", "3782", "特别困难", "2024专科助产02班"],["龙思桥", "4623", "特别困难", "2024本科护理学05班"],["李庆文", "1853", "特别困难", "2024本科护理学05班"],["李益萍", "0085", "特别困难", "2024本科护理学05班"],["黄俊艳", "3829", "困难", "2025专科中医学05班"],["林雪娴", "1828", "困难", "2025专科中医学05班"],["郭梓涛", "4311", "困难", "2025专科中医学05班"],["麦钰林", "1546", "困难", "2025专科中医骨伤01班"]],
+[["李凤林", "0645", "困难", "2025专科针灸推拿01班"],["朱佳雯", "0284", "困难", "2025专科针灸推拿01班"],["黄子政", "6011", "困难", "2025本科康复治疗学01班"],["黄如意", "0024", "困难", "2025本科康复治疗学01班"],["梁钰坤", "1021", "困难", "2025本科康复治疗学02班"],["余依妮", "1720", "困难", "2023专科医学检验技术01班"],["张沂群", "1064", "困难", "2024专科医学影像技术01班"],["梁德妹", "2820", "困难", "2024专科医学检验技术02班"],["徐秋杏", "8822", "困难", "2025本科医学影像技术02班"],["张瑞安", "003X", "一般困难", "2025专科临床医学08班"],["徐贤双", "1314", "一般困难", "2025专科临床医学02班"],["朱锐涛", "4216", "一般困难", "2025专科临床医学09班"],["周晓怡", "3021", "一般困难", "2024专科临床医学(影像诊断)01班"],["陈培涛", "3575", "一般困难", "2024专科临床医学05班"],["林东豪", "2936", "一般困难", "2024专科临床医学08班"],["罗计荣", "1112", "一般困难", "2024专科临床医学09班"],["招嘉如", "1427", "一般困难", "2023专科临床医学01班"],["陈佳俐", "1563", "一般困难", "2023专科临床医学07班"],["胡燕妹", "0042", "一般困难", "2023专科临床医学07班"],["黄鹏伟", "0350", "一般困难", "2023专科口腔医学05班"],["马丹微", "3663", "一般困难", "2023专科口腔医学03班"],["吴诗茵", "5424", "一般困难", "2023专科口腔医学01班"],["覃琼妍", "5683", "一般困难", "2023专科口腔医学04班"],["李嘉琳", "1221", "特别困难", "2023专科针灸推拿01班"],["马泽凯", "0339", "特别困难", "2023专科针灸推拿01班"],["张羽墨", "0014", "特别困难", "2023专科中医学03班"],["张仁凤", "2420", "特别困难", "2023专科康复治疗技术01班"],["钟振钊", "2854", "特别困难", "2023专科康复治疗技术01班"],["黄婷婷", "1828", "特别困难", "2023专科康复治疗技术01班"],["刘佳漫", "382X", "特别困难", "2023专科中医骨伤01班"],["宋秀连", "4240", "特别困难", "2023专科中医骨伤01班"],["郑绿茵", "1222", "特别困难", "2024高职中医康复技术三二分段01班"],["邓清华", "2158", "特别困难", "2024高职中医康复技术三二分段（湛江中医）01班"],["陈曼涛", "5019", "特别困难", "2024高职中医康复技术三二分段（湛江中医）01班"],["刘颖静", "058X", "特别困难", "2024高职中医康复技术三二分段（湛江中医）01班"],["陈柳光", "721X", "特别困难", "2024高职康复治疗技术三二分段01班"]],
+[["林杰帆", "4815", "特别困难", "2024专科医学影像技术02班"],["陈庭凯", "1818", "特别困难", "2024专科医学影像技术02班"],["谢深兰", "5129", "特别困难", "2024专科医学影像技术02班"],["莫媜媜", "7067", "特别困难", "2024专科医学影像技术02班"],["高雅", "3821", "特别困难", "2024专科医学影像技术02班"],["陈燕妹", "0624", "特别困难", "2024专科医学影像技术02班"],["潘珊珊", "6007", "特别困难", "2024专科医学检验技术01班"],["黄琪", "0967", "特别困难", "2024专科医学检验技术02班"],["李超然", "1687", "特别困难", "2024专科医学检验技术02班"],["骆嘉敏", "4451", "特别困难", "2024专科医学检验技术01班"],["张丹梅", "0327", "特别困难", "2024高职医学检验技术3+证书01班"],["吴菁", "0263", "特别困难", "2024高职医学检验技术3+证书01班"],["朱锡瑶", "1827", "特别困难", "2024高职医学检验技术3+证书01班"],["王小婷", "4841", "特别困难", "2024专科药品经营与管理01班"],["曾盼盼", "542X", "特别困难", "2024专科药品经营与管理01班"],["杨佳颖", "4028", "特别困难", "2024专科药品经营与管理01班"],["洪荟环", "1040", "特别困难", "2024专科药品经营与管理02班"],["杨曼", "0325", "特别困难", "2024专科药品经营与管理02班"],["孙妙淦", "8221", "特别困难", "2024专科药品经营与管理02班"],["李欣芬", "0329", "特别困难", "2025专科药品经营与管理01班"],["郑鹏铨", "4517", "特别困难", "2025专科药品经营与管理01班"],["潘素铃", "322X", "特别困难", "2025专科药品经营与管理02班"],["梁允珊", "0346", "特别困难", "2025专科药品经营与管理02班"],["陈思雨", "5029", "特别困难", "2024高职药学三二分段02班"],["莫嘉俊", "0517", "特别困难", "2024高职药学三二分段02班"],["赵扬", "251X", "特别困难", "2025本科药学01班"],["汪汶娟", "1004", "特别困难", "2023专科口腔医学02班"],["梁懿文", "6025", "特别困难", "2023专科口腔医学02班"],["张婷婷", "4923", "特别困难", "2023专科口腔医学02班"],["邓琪", "3767", "特别困难", "2023专科口腔医学02班"],["邓欣茹", "3062", "特别困难", "2023专科口腔医学01班"],["梁家雯", "4620", "特别困难", "2023专科口腔医学02班"],["吕欣蕾", "5721", "特别困难", "2023专科口腔医学02班"],["陈楚东", "2515", "特别困难", "2023专科口腔医学03班"],["张英泽", "5113", "特别困难", "2023专科口腔医学03班"],["李雨晴", "5107", "特别困难", "2023专科口腔医学01班"]],
+[["庄银纯", "2449", "特别困难", "2023专科口腔医学02班"],["叶俊怡", "6441", "特别困难", "2023专科口腔医学02班"],["廖思静", "434X", "特别困难", "2023专科口腔医学01班"],["郭思宏", "8713", "特别困难", "2024本科护理学05班"],["何丹清", "1124", "特别困难", "2024本科护理学05班"],["苏永健", "4230", "特别困难", "2024本科护理学06班"],["李文珍", "0321", "特别困难", "2024本科护理学06班"],["冯家惠", "6340", "特别困难", "2024本科护理学06班"],["叶宗梅", "2625", "特别困难", "2024本科护理学06班"],["杨淑文", "1145", "特别困难", "2024本科护理学06班"],["张嘉欣", "4048", "特别困难", "2024本科护理学06班"],["严泳珊", "1529", "特别困难", "2024高职护理三二分段02班"],["李美婷", "4324", "特别困难", "2024高职护理三二分段01班"],["刘悦晴", "0044", "特别困难", "2024高职护理三二分段02班"],["郭琳", "2129", "特别困难", "2024高职护理三二分段01班"],["郑奕琳", "452X", "特别困难", "2024高职护理三二分段02班"],["梁梅娟", "4168", "特别困难", "2024高职护理三二分段01班"],["吴黛茜", "4926", "困难", "2025专科中医学04班"],["朱翠怡", "432X", "困难", "2023专科药学01班"],["伍丽梦", "3663", "困难", "2025本科药学02班"],["陈嘉悦", "0925", "困难", "2025本科药学04班"],["凌汝淇", "1664", "困难", "2024本科药学02班"],["林嘉玲", "4322", "困难", "2024高职药学3+证书01班"],["杨勇", "6810", "困难", "2024专科中药学02班"],["刘宇晴", "6605", "困难", "2024高职药学3+证书02班"],["黄嬿妃", "8922", "困难", "2024本科药学03班"],["吴琳琳", "0045", "困难", "2025高职药学3+证书01班"],["黄素婷", "6543", "困难", "2025专科中药学01班"],["胡亚亚", "2585", "困难", "2025专科药学02班"],["梁绮琪", "4608", "困难", "2025高职药学三二分段01班"],["蓝燕兰", "2263", "困难", "2025高职药学三二分段02班"],["吴晓仪", "6825", "一般困难", "2023专科口腔医学02班"],["曾玮珲", "1539", "一般困难", "2023专科口腔医学01班"],["吴文君", "3668", "一般困难", "2023专科口腔医学05班"],["郭雪霞", "2520", "一般困难", "2023专科口腔医学01班"],["詹佳仪", "4228", "一般困难", "2023专科口腔医学04班"],["李钱伟", "4211", "一般困难", "2023专科口腔医学03班"],["陈旭朋", "2319", "一般困难", "2023专科口腔医学05班"]],
+[["陈怡雯", "5228", "一般困难", "2023专科口腔医学03班"],["刘付东", "2239", "一般困难", "2023专科口腔医学03班"],["冯祖儀", "3027", "一般困难", "2023专科口腔医学技术01班"],["杨燕慧", "1242", "一般困难", "2024专科口腔医学02班"],["徐怡姗", "3760", "一般困难", "2024专科口腔医学04班"],["肖秋琼", "9825", "一般困难", "2024专科口腔医学09班"],["黄晓琳", "0026", "特别困难", "2024高职康复治疗技术三二分段01班"],["黄彦凯", "4636", "特别困难", "2024高职康复治疗技术3+证书01班"],["卓文诗", "3847", "特别困难", "2024高职康复治疗技术3+证书01班"],["林雅璇", "802X", "特别困难", "2024高职康复治疗技术3+证书01班"],["刘倩", "0342", "特别困难", "2024高职康复治疗技术3+证书01班"],["廖嘉琪", "4146", "特别困难", "2024高职康复治疗技术3+证书01班"],["李嘉和", "6623", "特别困难", "2024高职康复治疗技术3+证书01班"],["李彬浩", "4539", "特别困难", "2024高职康复治疗技术3+证书01班"],["邓家保", "7235", "特别困难", "2024高职康复治疗技术3+证书01班"],["张国礼", "1610", "特别困难", "2024高职康复治疗技术3+证书01班"],["卢俪元", "0327", "特别困难", "2024专科康复治疗技术01班"],["邓雯文", "044X", "特别困难", "2024专科康复治疗技术01班"],["陈文翠", "0060", "特别困难", "2024高职医学检验技术3+证书01班"],["魏凤玲", "5180", "特别困难", "2024高职医学检验技术3+证书01班"],["赖玉莹", "4866", "特别困难", "2024高职医学检验技术3+证书01班"],["尹楚馨", "1220", "特别困难", "2024高职医学检验技术3+证书01班"],["王鑫铭", "7328", "特别困难", "2024高职医学检验技术3+证书01班"],["温瀚清", "0010", "特别困难", "2025本科医学影像技术01班"],["罗雪丹", "082X", "特别困难", "2025本科医学影像技术01班"],["刘家森", "2117", "特别困难", "2025本科医学影像技术01班"],["莫婉珊", "8148", "特别困难", "2025本科医学影像技术01班"],["欧梓琪", "2420", "特别困难", "2024高职医学检验技术三二分段01班"],["刘秀琴", "1728", "特别困难", "2024高职医学影像技术3+证书01班"],["黄婷", "6088", "特别困难", "2024高职医学影像技术3+证书01班"],["李颖", "0045", "特别困难", "2023专科药品经营与管理01班"],["张细华", "5525", "特别困难", "2023专科药品经营与管理01班"],["邓惠凡", "172X", "特别困难", "2025专科中药学01班"],["朱星玥", "9027", "特别困难", "2024专科药学04班"]],
+[["傅巧月", "142X", "特别困难", "2025专科临床医学05班"],["李明英", "1227", "特别困难", "2025专科临床医学06班"],["古美君", "2528", "特别困难", "2025专科临床医学07班"],["努如拉·阿布来提", "0012", "特别困难", "2025专科临床医学07班"],["颜烯怡", "0849", "特别困难", "2025专科临床医学08班"],["廖颜玉", "0525", "特别困难", "2025专科临床医学08班"],["陈海萍", "5689", "特别困难", "2025专科临床医学05班"],["钟慧兰", "6129", "特别困难", "2025专科临床医学05班"],["吴华莹", "6100", "特别困难", "2025专科临床医学05班"],["陈佳慧", "2548", "特别困难", "2023专科口腔医学01班"],["罗颖", "1383", "特别困难", "2023专科口腔医学01班"],["张振辉", "1197", "特别困难", "2023专科口腔医学04班"],["黄煜垚", "232X", "特别困难", "2023专科口腔医学04班"],["夏嘉柔", "4522", "特别困难", "2023专科口腔医学01班"],["陈燕瑜", "4344", "特别困难", "2023专科口腔医学02班"],["曾会灵", "424X", "特别困难", "2023专科口腔医学02班"],["赖丹燕", "2361", "特别困难", "2023专科口腔医学01班"],["翁小茜", "4285", "特别困难", "2023专科口腔医学02班"],["成倩", "7605", "特别困难", "2023专科口腔医学01班"],["潘茹颖", "1128", "特别困难", "2023专科口腔医学02班"],["严淼", "1544", "特别困难", "2023专科口腔医学04班"],["陈镇豪", "0031", "特别困难", "2023专科口腔医学技术01班"],["李映丽", "4246", "特别困难", "2023专科口腔医学技术01班"],["唐海锋", "1042", "特别困难", "2024高职护理三二分段03班"],["邹玉云", "2449", "特别困难", "2024高职护理三二分段03班"],["陈春榆", "2429", "特别困难", "2024高职护理三二分段03班"],["李晓芊", "010X", "特别困难", "2024高职护理三二分段03班"],["胡妙慧", "0762", "特别困难", "2024高职护理三二分段03班"],["黄思婷", "6369", "特别困难", "2024高职护理三二分段04班"],["黄柳霞", "1624", "特别困难", "2024高职护理三二分段04班"],["李家仪", "4522", "特别困难", "2024高职护理三二分段03班"],["林洁梅", "3820", "特别困难", "2024高职护理三二分段04班"],["莫芷盈", "0045", "特别困难", "2024高职护理三二分段03班"],["罗云英", "7829", "特别困难", "2024高职护理三二分段03班"],["蔡惠芳", "3960", "特别困难", "2024高职护理三二分段04班"],["郑晓敏", "2026", "特别困难", "2024高职护理三二分段03班"]],
+[["温霭桐", "0044", "特别困难", "2024高职护理三二分段03班"],["莫家穗", "5223", "困难", "2025高职药学三二分段04班"],["谢宝胜", "3275", "困难", "2025高职药学三二分段04班"],["马剑慧", "2625", "困难", "2025高职药学三二分段04班"],["陈香凝", "2347", "困难", "2024专科药学01班"],["龙敏静", "1164", "困难", "2024专科药学02班"],["林伟铨", "2917", "困难", "2024专科药学04班"],["钟骏伦", "0658", "困难", "2024专科药品经营与管理01班"],["张洁", "1323", "困难", "2025专科药品经营与管理01班"],["王紫怡", "4829", "困难", "2025专科药品经营与管理01班"],["杨豫聪", "4712", "困难", "2025专科药品经营与管理01班"],["陈雨欣", "7825", "困难", "2024高职药学三二分段01班"],["关芷君", "0044", "困难", "2024高职药学三二分段03班"],["侯小泉", "3814", "困难", "2024高职药学三二分段02班"],["马洁雨", "0528", "困难", "2025专科临床医学05班"],["郑怡", "4422", "一般困难", "2024高职口腔医学技术3+证书01班"],["苏学文", "0097", "一般困难", "2025专科口腔医学02班"],["谭沅依", "2617", "一般困难", "2025专科口腔医学03班"],["韦秋萍", "3122", "一般困难", "2025专科口腔医学04班"],["许晓曼", "416X", "一般困难", "2025专科口腔医学08班"],["曾映霞", "168X", "一般困难", "2023专科护理02班"],["周佳仪", "3085", "一般困难", "2023专科护理02班"],["何诗语", "8389", "一般困难", "2023专科护理(涉外)01班"],["八燕霞", "4926", "一般困难", "2023高职护理3+证书（三年制）1班"],["庄锦玉", "0661", "一般困难", "2024高职护理三二分段06班"],["梁佳敏", "3024", "一般困难", "2023高职护理3+证书（三年制）2班"],["吴欣宜", "6045", "一般困难", "2024专科护理04班"],["梁美欣", "1022", "一般困难", "2024专科护理03班"],["王仪", "4544", "一般困难", "2024本科护理学06班"],["张珊", "0046", "特别困难", "2024专科康复治疗技术01班"],["罗利萍", "0322", "特别困难", "2024专科康复治疗技术01班"],["蓝远霞", "2844", "特别困难", "2024专科康复治疗技术01班"],["柯柱烽", "1191", "特别困难", "2024专科康复治疗技术01班"],["萧培琼", "4427", "特别困难", "2024专科康复治疗技术02班"],["曹燕", "3022", "特别困难", "2024专科康复治疗技术02班"],["邓桂英", "3064", "特别困难", "2024专科康复治疗技术02班"],["李秋菊", "6045", "特别困难", "2024专科康复治疗技术01班"]],
+[["陈可勤", "2315", "特别困难", "2024专科中医骨伤01班"],["陈德彤", "192X", "特别困难", "2024专科针灸推拿01班"],["黄梦丹", "4546", "特别困难", "2024专科针灸推拿02班"],["何梓钰", "1229", "特别困难", "2024专科针灸推拿02班"],["王诗芊", "5125", "特别困难", "2024专科中医骨伤01班"],["何纬艳", "2227", "特别困难", "2024高职医学影像技术3+证书01班"],["罗晓焙", "6323", "特别困难", "2024高职医学影像技术3+证书01班"],["王俊花", "0948", "特别困难", "2025专科医学检验技术01班"],["陈雅", "5028", "特别困难", "2025专科医学检验技术02班"],["梁炜锡", "2230", "特别困难", "2025专科医学影像技术01班"],["吴婷婷", "5768", "特别困难", "2025专科医学影像技术01班"],["邓喻樱", "152X", "特别困难", "2025专科医学影像技术01班"],["杨雨彤", "6044", "特别困难", "2025专科医学检验技术01班"],["谢宏洁", "6464", "特别困难", "2025专科医学检验技术01班"],["万湘", "0086", "特别困难", "2025专科医学检验技术01班"],["郑康金", "1953", "特别困难", "2025专科医学检验技术02班"],["黄浩", "1415", "特别困难", "2025专科医学检验技术02班"],["吴晶优", "3582", "特别困难", "2025专科医学检验技术02班"],["卢铭泉", "3213", "特别困难", "2025专科临床医学06班"],["陈友杰", "4519", "特别困难", "2025专科临床医学06班"],["钟湘茹", "1129", "特别困难", "2025专科临床医学06班"],["郑金怡", "5326", "特别困难", "2025专科临床医学06班"],["刘青莹", "1026", "特别困难", "2025专科临床医学07班"],["何家铖", "1656", "特别困难", "2025专科临床医学07班"],["谢金枚", "1465", "特别困难", "2025专科临床医学07班"],["吴晶娜", "0565", "特别困难", "2025专科临床医学07班"],["李境薇", "3120", "特别困难", "2025专科临床医学08班"],["汪浩洋", "2718", "特别困难", "2025专科临床医学08班"],["饶文瑜", "2564", "特别困难", "2025专科临床医学08班"],["叶嘉宏", "6436", "特别困难", "2025专科临床医学08班"],["熊祚", "5813", "特别困难", "2025专科临床医学08班"],["黄泉斌", "6611", "特别困难", "2023专科口腔医学技术01班"],["翁千慧", "416X", "特别困难", "2023专科口腔医学技术01班"],["张怡", "542X", "特别困难", "2024专科口腔医学01班"],["吴煜鑫", "4113", "特别困难", "2024专科口腔医学01班"],["丘妍妍", "3629", "特别困难", "2024专科口腔医学01班"]],
+[["伍静娴", "3043", "特别困难", "2024专科口腔医学01班"],["严嘉欣", "3827", "特别困难", "2024专科口腔医学02班"],["朱恒哲", "1851", "特别困难", "2024专科口腔医学02班"],["钟灵贵", "3914", "特别困难", "2024专科口腔医学02班"],["刘明发", "4111", "特别困难", "2024专科口腔医学02班"],["麦维娴", "5727", "特别困难", "2024专科口腔医学02班"],["瓦日斯·喀哈尔", "2930", "特别困难", "2024专科口腔医学02班"],["廖芯雨", "5822", "特别困难", "2024专科口腔医学02班"],["唐思晨", "0047", "特别困难", "2024高职护理3+证书01班"],["吴艳芳", "5826", "特别困难", "2024高职护理3+证书01班"],["韦文月", "0028", "特别困难", "2024高职护理3+证书01班"],["何钰荧", "3727", "特别困难", "2024高职护理3+证书01班"],["梁渝雪", "1026", "特别困难", "2024高职护理3+证书01班"],["邹思婷", "4700", "特别困难", "2024高职护理3+证书01班"],["李秋月", "8325", "特别困难", "2024高职护理3+证书01班"],["廖文凤", "2129", "特别困难", "2024高职护理3+证书01班"],["姚艳怡", "2324", "特别困难", "2024高职护理3+证书01班"],["梁筱娴", "7026", "特别困难", "2024高职护理3+证书01班"],["陈梦琪", "4443", "特别困难", "2024高职护理3+证书01班"],["何薇", "3023", "特别困难", "2024高职护理3+证书02班"],["刘炜钰", "782X", "特别困难", "2024高职护理3+证书02班"],["陈梅燕", "3424", "困难", "2025专科临床医学07班"],["闲育彬", "575X", "困难", "2025专科临床医学08班"],["梁超", "2412", "困难", "2025专科临床医学02班"],["陈信龙", "1635", "困难", "2025专科临床医学09班"],["李嘉颖", "4345", "困难", "2025本科临床医学02班"],["陈熹", "0830", "困难", "2024专科临床医学01班"],["叶子扬", "0279", "困难", "2024专科临床医学03班"],["黄雯淇", "3069", "困难", "2024专科临床医学04班"],["唐振华", "747X", "困难", "2024专科临床医学04班"],["黄泳琳", "5920", "困难", "2024专科临床医学05班"],["张金培", "3713", "困难", "2024专科临床医学07班"],["张馨文", "2721", "困难", "2024专科临床医学08班"],["蔡柔柔", "0568", "困难", "2024专科临床医学10班"],["彭悦", "6588", "一般困难", "2024本科护理学06班"],["李家知", "0027", "一般困难", "2024高职护理三二分段01班"],["林妙泓", "0684", "一般困难", "2024高职护理三二分段01班"]],
+[["黄佳敏", "294X", "一般困难", "2024高职护理三二分段01班"],["郭幸铃", "3325", "一般困难", "2024高职护理三二分段01班"],["黄嘉静", "0625", "一般困难", "2024高职护理3+证书03班"],["冯梅", "3521", "一般困难", "2024本科护理学02班"],["李艳芳", "0646", "一般困难", "2024本科护理学02班"],["周桂羽", "3723", "一般困难", "2024本科护理学04班"],["周文俊", "0316", "一般困难", "2025本科护理学01班"],["赖燕珍", "5907", "一般困难", "2025专科护理02班"],["宋丹丹", "4721", "一般困难", "2025专科助产01班"],["陈贝珺", "2069", "一般困难", "2025高职护理三二分段02班"],["王美淇", "1865", "特别困难", "2024专科中医骨伤01班"],["张淑苹", "5525", "特别困难", "2024专科中医骨伤01班"],["刘少娴", "1846", "特别困难", "2024专科中医骨伤01班"],["陈可媛", "1929", "特别困难", "2024专科针灸推拿01班"],["陈银璇", "1548", "特别困难", "2024专科针灸推拿01班"],["马军", "2516", "特别困难", "2024专科针灸推拿01班"],["陆明丹", "5161", "特别困难", "2024专科针灸推拿02班"],["帕尔哈提·阿布都艾尼", "0299", "特别困难", "2024专科针灸推拿02班"],["刘思琪", "0742", "特别困难", "2024专科中医学01班"],["徐嘉彗", "3325", "特别困难", "2024专科中医学01班"],["冯师华", "5248", "特别困难", "2024专科中医学01班"],["张晓琪", "0023", "特别困难", "2024专科中医学01班"],["邝敏怡", "6027", "特别困难", "2024专科中医学01班"],["徐创明", "4551", "特别困难", "2024专科中医学02班"],["梁艺馨", "902X", "特别困难", "2025专科医学检验技术02班"],["赖晓慧", "3847", "特别困难", "2025专科医学影像技术01班"],["庄滢荧", "0425", "特别困难", "2025专科医学影像技术01班"],["温小慧", "5427", "特别困难", "2025专科医学影像技术01班"],["沈琬茹", "2548", "特别困难", "2025专科医学影像技术01班"],["梁春颖", "1224", "特别困难", "2025专科医学影像技术02班"],["李敏贤", "6682", "特别困难", "2025高职医学检验技术三二分段03班"],["张园园", "2522", "特别困难", "2025高职医学检验技术3+证书01班"],["李俞乐", "392X", "特别困难", "2025高职医学检验技术3+证书01班"],["柯丽荣", "4427", "特别困难", "2025高职医学检验技术3+证书01班"],["谭静", "3821", "特别困难", "2025高职医学检验技术3+证书01班"],["黄烁樨", "7985", "特别困难", "2025高职医学检验技术3+证书01班"]],
+[["许凯莉", "1827", "特别困难", "2025专科临床医学08班"],["唐宇轩", "183X", "特别困难", "2025专科临床医学08班"],["王丹", "6064", "特别困难", "2025专科临床医学03班"],["谢霖飞", "6432", "特别困难", "2025专科临床医学03班"],["刘志杰", "2816", "特别困难", "2025专科临床医学04班"],["龙沚欣", "382X", "特别困难", "2025专科临床医学04班"],["何意聪", "6336", "特别困难", "2025专科临床医学01班"],["陈思婷", "1341", "特别困难", "2025专科临床医学02班"],["曾靖雯", "4222", "特别困难", "2025专科临床医学03班"],["杜海涛", "6348", "特别困难", "2025专科临床医学03班"],["黄永丽", "3187", "特别困难", "2025专科临床医学03班"],["林家杰", "3314", "特别困难", "2025专科临床医学04班"],["潘茜", "0026", "特别困难", "2025专科临床医学04班"],["曾慧华", "1829", "特别困难", "2025专科临床医学04班"],["梁思宇", "282X", "特别困难", "2024专科口腔医学02班"],["李康婵", "224X", "特别困难", "2024专科口腔医学03班"],["胡晓丹", "4864", "特别困难", "2024专科口腔医学03班"],["胡君", "5209", "特别困难", "2024专科口腔医学03班"],["钟境贵", "1839", "特别困难", "2024专科口腔医学03班"],["周美诗", "1424", "特别困难", "2024专科口腔医学04班"],["练锦绣", "6003", "特别困难", "2024专科口腔医学04班"],["胡智恒", "5917", "特别困难", "2024专科口腔医学04班"],["何海聆", "0728", "特别困难", "2024专科口腔医学05班"],["莫礼培", "3177", "特别困难", "2024专科口腔医学05班"],["林翠烦", "5542", "特别困难", "2024专科口腔医学05班"],["梁志杰", "1158", "特别困难", "2024专科口腔医学06班"],["李广尧", "6377", "特别困难", "2024专科口腔医学06班"],["吴贝尔", "1048", "特别困难", "2024专科口腔医学07班"],["何庚亭", "3822", "特别困难", "2024高职护理3+证书02班"],["黄巧", "0643", "特别困难", "2024高职护理3+证书02班"],["潘尹棋", "0020", "特别困难", "2024高职护理3+证书02班"],["黄思敏", "2387", "特别困难", "2024高职护理3+证书02班"],["邓晓晴", "2122", "特别困难", "2024高职护理3+证书02班"],["李佳佳", "2487", "特别困难", "2024高职护理3+证书02班"],["赖菲帆", "1988", "特别困难", "2024高职护理3+证书03班"],["黄悠雅", "3129", "特别困难", "2024高职护理3+证书03班"],["张纯珍", "1422", "特别困难", "2024高职护理3+证书03班"]],
+[["罗子怡", "7224", "特别困难", "2024高职护理3+证书03班"],["卢健荧", "3021", "特别困难", "2024高职护理3+证书04班"],["周巧儿", "3029", "特别困难", "2024高职护理3+证书04班"],["严宝玲", "6949", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["李崇辉", "183X", "困难", "2024专科临床医学09班"],["龙玲", "5684", "困难", "2024专科临床医学12班"],["刘亚美", "2048", "困难", "2023专科临床医学01班"],["余蕊蕊", "9184", "困难", "2023专科临床医学01班"],["巫楚君", "8320", "困难", "2023专科临床医学01班"],["梁雨杰", "7120", "困难", "2023专科临床医学02班"],["岑静芸", "4126", "困难", "2023专科临床医学07班"],["潘烜", "0325", "困难", "2023专科临床医学04班"],["黄婷婷", "1820", "困难", "2023专科临床医学04班"],["许建营", "099X", "困难", "2023专科临床医学04班"],["赵春磊", "2895", "困难", "2023专科口腔医学03班"],["刘婧慧", "5422", "困难", "2023专科口腔医学03班"],["陈秋帆", "0046", "困难", "2023专科口腔医学01班"],["王伟豪", "5417", "一般困难", "2025高职护理三二分段07班"],["郑树萍", "296X", "一般困难", "2024专科护理05班"],["沈芷悦", "6425", "特别困难", "2024专科中医学02班"],["刘洪妙", "042X", "特别困难", "2024专科中医学02班"],["刘文辉", "3232", "特别困难", "2024专科中医学02班"],["黄俏儿", "1745", "特别困难", "2024专科中医学03班"],["谢可欣", "0783", "特别困难", "2024专科中医学03班"],["冯海华", "0015", "特别困难", "2024专科中医学03班"],["苏旋益", "469X", "特别困难", "2024专科中医学03班"],["王楷鑫", "0231", "特别困难", "2024专科中医学04班"],["陈佳敏", "1521", "特别困难", "2024专科中医学08班"],["王泳斯", "4820", "特别困难", "2024专科中医学08班"],["植银英", "5724", "特别困难", "2024专科中医学08班"],["林裕方", "0526", "特别困难", "2024专科中医学08班"],["岑芊慧", "0047", "特别困难", "2024专科中医学08班"],["池锦春", "0449", "特别困难", "2024专科中医学08班"],["王佳朗", "7230", "特别困难", "2025高职医学检验技术三二分段03班"],["蔡晓娜", "5529", "特别困难", "2025高职医学检验技术三二分段02班"],["丁丹", "3323", "特别困难", "2024高职医学检验技术三二分段（潮州卫校）01班"],["陈诗维", "3425", "特别困难", "2025专科药学02班"]],
+[["蓝旭云", "0585", "特别困难", "2025专科药品经营与管理01班"],["谭宇婷", "6628", "特别困难", "2025专科药品经营与管理01班"],["黎小微", "2943", "特别困难", "2024高职药学三二分段03班"],["卢梅艳", "3822", "特别困难", "2024高职药学三二分段02班"],["钱程", "5747", "特别困难", "2024高职药学三二分段03班"],["杨慧茹", "0125", "特别困难", "2025专科药学02班"],["林世勇", "3514", "特别困难", "2023专科药品经营与管理01班"],["彭梦悦", "6763", "特别困难", "2023专科药学02班"],["陈小桃", "3725", "特别困难", "2023专科药学02班"],["杨浩", "4636", "特别困难", "2023专科药学01班"],["张相文", "3232", "特别困难", "2025专科临床医学09班"],["蒋颖琳", "0225", "特别困难", "2025专科临床医学09班"],["刘妙君", "0682", "特别困难", "2025专科临床医学10班"],["蔡灿敏", "7024", "特别困难", "2025专科临床医学09班"],["吴慧玲", "3707", "特别困难", "2025专科临床医学09班"],["李永嘉", "6951", "特别困难", "2025专科临床医学10班"],["廖文慧", "6123", "特别困难", "2025本科临床医学02班"],["谢锦源", "2236", "特别困难", "2025本科临床医学03班"],["廖悦斌", "0312", "特别困难", "2025本科临床医学03班"],["于文茜", "4483", "特别困难", "2025本科临床医学04班"],["袁伟明", "519X", "特别困难", "2025本科临床医学04班"],["原美凤", "256X", "特别困难", "2025本科临床医学02班"],["陈钰", "7222", "特别困难", "2025本科临床医学02班"],["刘家其", "201X", "特别困难", "2024专科口腔医学07班"],["黄琳洁", "6345", "特别困难", "2024专科口腔医学08班"],["植丽斯", "5727", "特别困难", "2024专科口腔医学05班"],["张颖思", "0320", "特别困难", "2024专科口腔医学06班"],["莫海茵", "6028", "特别困难", "2024专科口腔医学07班"],["郑婕莹", "0067", "特别困难", "2024专科口腔医学07班"],["黄希", "3764", "特别困难", "2024专科口腔医学07班"],["李紫瑜", "5387", "特别困难", "2024专科口腔医学08班"],["官玉香", "6523", "特别困难", "2024专科口腔医学06班"],["陈俊岳", "3610", "特别困难", "2024专科口腔医学09班"],["杨涛铭", "2715", "特别困难", "2024专科口腔医学09班"],["马锦鸿", "6034", "特别困难", "2024专科口腔医学10班"],["陈佳慧", "1025", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["朱玉瀚", "3220", "特别困难", "2024高职护理三二分段(潮州卫校)01班"]],
+[["黄依琳", "2166", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["张可芸", "432X", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["陈川梓", "5625", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["洪晓芸", "1628", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["余梓迎", "0022", "特别困难", "2024高职护理三二分段(潮州卫校)01班"],["李灵珠", "1224", "特别困难", "2024本科护理学01班"],["黄琳", "006X", "特别困难", "2024本科护理学02班"],["梁展宁", "503X", "特别困难", "2024本科护理学03班"],["陈可媚", "1209", "特别困难", "2024本科护理学03班"],["郭丽婷", "634X", "特别困难", "2024本科护理学02班"],["曾漪婷", "3226", "特别困难", "2024本科护理学02班"],["张杰森", "2214", "困难", "2023专科口腔医学02班"],["刘彩玲", "5162", "困难", "2023专科口腔医学02班"],["陈金蝉", "3525", "困难", "2023专科口腔医学04班"],["林土勇", "4077", "困难", "2023专科口腔医学01班"],["谢雨菲", "2200", "困难", "2023专科口腔医学01班"],["何延晖", "0267", "困难", "2023专科口腔医学03班"],["黎晓婵", "0526", "困难", "2024专科口腔医学09班"],["王郁楠", "7168", "困难", "2024专科口腔医学技术01班"],["梁楚婷", "712X", "困难", "2024高职口腔医学技术3+证书01班"],["李倩叶", "1324", "困难", "2024高职口腔医学技术3+证书01班"],["刘佳谊", "5720", "困难", "2025专科口腔医学02班"],["徐燕漫", "4543", "困难", "2025专科口腔医学04班"],["吴依玲", "2667", "困难", "2025专科口腔医学06班"],["唐筱", "0362", "特别困难", "2024专科中医学08班"],["周玉芳", "7006", "特别困难", "2024专科中医学07班"],["李文雯", "3525", "特别困难", "2024专科中医学07班"],["苏蕊媚", "2928", "特别困难", "2024专科中医学07班"],["吕至立", "0776", "特别困难", "2024专科中医学07班"],["曾楷茵", "082X", "特别困难", "2024专科中医学07班"],["孙瑾仪", "0026", "特别困难", "2024专科中医学07班"],["郑静怡", "0665", "特别困难", "2024专科中医学07班"],["赖嘉茵", "2540", "特别困难", "2024专科中医学07班"],["郑嘉镇", "4212", "特别困难", "2024专科中医学06班"],["张玉霞", "172X", "特别困难", "2024专科中医学06班"],["李欣静", "3041", "特别困难", "2024专科中医学06班"],["董栩燕", "2748", "特别困难", "2024专科中医学06班"]],
+[["郑茹", "4441", "特别困难", "2023专科药学01班"],["刘裕豪", "1810", "特别困难", "2025本科药学02班"],["夏方娱", "0629", "特别困难", "2025本科药学03班"],["叶创建", "2450", "特别困难", "2025本科药学04班"],["李楚新", "3218", "特别困难", "2024本科药学05班"],["戴俊桦", "5129", "特别困难", "2024本科药学04班"],["欧阳嘉俊", "0059", "特别困难", "2024本科药学04班"],["伍美凤", "4428", "特别困难", "2024高职药学3+证书01班"],["梁丽萍", "7282", "特别困难", "2024高职药学3+证书01班"],["黄诗韵", "7827", "特别困难", "2024高职药学3+证书01班"],["陈志婷", "3026", "特别困难", "2024高职药学3+证书01班"],["黄思艳", "2547", "特别困难", "2024高职药学3+证书01班"],["李美琪", "7923", "特别困难", "2024高职药学3+证书02班"],["陈诗聆", "0826", "特别困难", "2024本科药学03班"],["谢米朵", "5122", "特别困难", "2025本科临床医学02班"],["刘业娅", "3922", "特别困难", "2025本科临床医学01班"],["李诗", "3122", "特别困难", "2024专科临床医学01班"],["罗深沂", "2540", "特别困难", "2024专科临床医学01班"],["李文燕", "538X", "特别困难", "2024专科临床医学01班"],["陈婉茹", "2327", "特别困难", "2024专科临床医学01班"],["梁盈滢", "2020", "特别困难", "2024专科临床医学01班"],["刘博伟", "2418", "特别困难", "2024专科临床医学02班"],["梁智坤", "0331", "特别困难", "2024专科临床医学01班"],["何秋", "4828", "特别困难", "2024专科临床医学02班"],["丘文彬", "2536", "特别困难", "2024专科临床医学02班"],["巫佳仪", "3848", "特别困难", "2024专科临床医学02班"],["江威", "089X", "特别困难", "2024专科临床医学02班"],["梅颖弦", "2822", "特别困难", "2024专科临床医学02班"],["刘祉呈", "3948", "特别困难", "2024专科口腔医学10班"],["金泳婷", "1920", "特别困难", "2024专科口腔医学10班"],["陶嘉信", "163X", "特别困难", "2024专科口腔医学10班"],["蔡又琪", "3323", "特别困难", "2024专科口腔医学09班"],["李俞洁", "1842", "特别困难", "2024专科口腔医学09班"],["林梁凯", "0634", "特别困难", "2024专科口腔医学09班"],["梁辉庭", "0837", "特别困难", "2024专科口腔医学09班"],["王金娟", "2742", "特别困难", "2024专科口腔医学09班"],["王静萤", "5062", "特别困难", "2024专科口腔医学09班"]],
+[["杨素静", "1540", "特别困难", "2024专科口腔医学09班"],["曹阳阳", "0186", "特别困难", "2024专科口腔医学10班"],["李文慧", "162X", "特别困难", "2024专科口腔医学10班"],["陈丽莎", "2722", "特别困难", "2024专科口腔医学技术01班"],["陈国书", "5433", "特别困难", "2024本科护理学03班"],["陈芷盈", "0869", "特别困难", "2024本科护理学04班"],["李康毅", "4098", "特别困难", "2025本科护理学01班"],["林建宏", "2912", "特别困难", "2025本科护理学01班"],["陈梓玉", "0866", "特别困难", "2025本科护理学01班"],["杨子游", "1838", "特别困难", "2025本科护理学01班"],["吕集贤", "4013", "特别困难", "2025本科护理学01班"],["庄秀贝", "5569", "特别困难", "2025本科护理学02班"],["郭婵", "4222", "特别困难", "2025本科护理学02班"],["刘湘悦", "8824", "特别困难", "2025本科护理学02班"],["陈芝华", "0468", "特别困难", "2025本科护理学03班"],["陈杰薇", "0829", "特别困难", "2025本科护理学04班"],["王帅", "0130", "特别困难", "2025本科护理学04班"],["赖美玲", "9546", "困难", "2025专科口腔医学08班"],["黄彪", "0637", "困难", "2025专科口腔医学08班"],["徐子惠", "0821", "困难", "2025专科口腔医学技术02班"],["马晓娜", "252X", "困难", "2023专科护理02班"],["黄子茵", "0944", "困难", "2023专科护理02班"],["杨冬霞", "3520", "困难", "2023专科护理(涉外)01班"],["刘雯雯", "2044", "困难", "2023高职护理3+证书（三年制）2班"],["龚雯冰", "3626", "困难", "2024高职护理三二分段05班"],["刘晓娜", "2568", "困难", "2024专科护理04班"],["方妤", "0480", "困难", "2024专科护理04班"],["廖凯乐", "7732", "困难", "2024专科助产01班"],["吴雨洁", "3028", "困难", "2024高职护理三二分段02班"],["陈烨纯", "532X", "困难", "2024高职护理三二分段01班"],["黄冠瑛", "2449", "困难", "2024高职护理三二分段02班"],["莫钒艺", "5222", "特别困难", "2024专科中医学06班"],["曾碧", "2627", "特别困难", "2024专科中医学06班"],["陈薇芳", "6560", "特别困难", "2024专科中医学06班"],["陈荟洁", "0041", "特别困难", "2024专科中医学06班"],["张紫霞", "0421", "特别困难", "2024专科中医学05班"],["叶静茹", "8620", "特别困难", "2024专科中医学05班"],["崔丽怡", "0446", "特别困难", "2024专科中医学05班"]],
+[["欧雄彬", "2117", "特别困难", "2024专科中医学05班"],["张英卓", "2648", "特别困难", "2024专科中医学05班"],["谢梅萍", "6526", "特别困难", "2024专科中医学05班"],["李瑜", "3149", "特别困难", "2024专科中医学05班"],["吴小茹", "4227", "特别困难", "2024专科中医学05班"],["植海琳", "5423", "特别困难", "2024专科中医学05班"],["陈永欣", "318X", "特别困难", "2024本科药学03班"],["王安妮", "2425", "特别困难", "2024本科药学03班"],["周彬妍", "2120", "特别困难", "2025高职药学3+证书01班"],["翁诗华", "0026", "特别困难", "2025专科中药学01班"],["黄倩茹", "5923", "特别困难", "2025专科药学01班"],["黄小恒", "0026", "特别困难", "2025高职药学三二分段01班"],["梁承颖", "2629", "特别困难", "2025高职药学三二分段01班"],["谭木兰", "2020", "特别困难", "2025高职药学三二分段02班"],["陈榆莹", "1420", "特别困难", "2025高职药学三二分段02班"],["汪茹芸", "1625", "特别困难", "2025高职药学三二分段03班"],["邓倩怡", "3225", "特别困难", "2025高职药学三二分段04班"],["李金妍", "0045", "特别困难", "2025高职药学三二分段04班"],["孔飘迎", "4020", "特别困难", "2023专科中药学01班"],["谢云铃", "5123", "特别困难", "2023专科中药学01班"],["陈楚玲", "832X", "特别困难", "2024专科临床医学02班"],["张金生", "603X", "特别困难", "2024专科临床医学03班"],["成海丽", "574X", "特别困难", "2024专科临床医学03班"],["刘杰豪", "5513", "特别困难", "2024专科临床医学03班"],["周可滢", "042X", "特别困难", "2024专科临床医学04班"],["李耀华", "1877", "特别困难", "2024专科临床医学04班"],["杨梓洲", "4216", "特别困难", "2024专科临床医学04班"],["韦英毫", "3038", "特别困难", "2024专科临床医学04班"],["苏湛希", "2758", "特别困难", "2024专科临床医学05班"],["刘讪琳", "006X", "特别困难", "2024专科临床医学05班"],["庄皓坤", "4852", "特别困难", "2024专科临床医学05班"],["郑欣莉", "2949", "特别困难", "2024专科临床医学05班"],["买日拍提汗·买沙地尔", "0520", "特别困难", "2024专科临床医学06班"],["梁芷仪", "1424", "特别困难", "2024专科口腔医学技术01班"],["郑雪岚", "2149", "特别困难", "2024专科口腔医学技术01班"],["余文雅", "3045", "特别困难", "2024专科口腔医学技术01班"],["张海晴", "2847", "特别困难", "2024专科口腔医学技术02班"]],
+[["徐靖轩", "9178", "特别困难", "2024专科口腔医学技术02班"],["黄家传", "0819", "特别困难", "2024高职口腔医学技术3+证书01班"],["谢木兰", "4148", "特别困难", "2024高职口腔医学技术3+证书01班"],["李家怡", "002X", "特别困难", "2024高职口腔医学技术3+证书01班"],["邓军毫", "8017", "特别困难", "2024高职口腔医学技术3+证书01班"],["蔡璧蔚", "1125", "特别困难", "2024高职口腔医学技术3+证书01班"],["沈冬玲", "2127", "特别困难", "2024高职口腔医学技术3+证书01班"],["成婷婷", "7169", "特别困难", "2024高职口腔医学技术3+证书01班"],["潘晶晶", "6005", "特别困难", "2024高职口腔医学技术3+证书01班"],["杨丹丹", "0026", "特别困难", "2025本科护理学05班"],["龙艳丽", "1045", "特别困难", "2025本科护理学05班"],["何镶月", "1221", "特别困难", "2025本科护理学05班"],["李殊媛", "0922", "特别困难", "2025本科护理学05班"],["黄蓝", "0945", "特别困难", "2025本科护理学06班"],["苏祉璇", "8962", "特别困难", "2025本科护理学06班"],["陈佳美", "2048", "特别困难", "2025专科护理01班"],["董红茵", "2744", "特别困难", "2025专科护理01班"],["彭子晴", "4940", "特别困难", "2025专科护理01班"],["洪学锋", "5553", "特别困难", "2025专科护理01班"],["蔡颖辉", "4334", "特别困难", "2025专科护理01班"],["唐榕", "3180", "特别困难", "2025专科护理02班"],["陈剑烽", "4117", "特别困难", "2025专科护理02班"],["戚梦瑶", "462X", "特别困难", "2025专科护理02班"],["杨嘉丽", "2022", "困难", "2024高职护理三二分段04班"],["李艺萍", "3283", "困难", "2024高职护理3+证书02班"],["温织蓉", "6767", "困难", "2024高职护理3+证书03班"],["严利梦", "2040", "困难", "2024高职护理3+证书04班"],["陈佳欣", "2427", "困难", "2024高职护理3+证书04班"],["潘秀菊", "8629", "困难", "2024高职护理3+证书04班"],["黄佳仪", "5726", "困难", "2024高职护理三二分段(潮州卫校)01班"],["许漫洁", "6322", "困难", "2024高职护理三二分段(潮州卫校)01班"],["黎梓莹", "4347", "困难", "2024本科护理学01班"],["刘湘", "1627", "困难", "2025本科护理学01班"],["蔡晓静", "034X", "困难", "2025本科护理学02班"],["陈映萍", "0044", "困难", "2025本科护理学02班"],["杨茜", "2420", "困难", "2025本科护理学03班"],["吴海如", "3928", "困难", "2025本科护理学06班"]],
+[["许盈", "0046", "特别困难", "2024专科中医学05班"],["韦晓华", "1426", "特别困难", "2024专科中医学05班"],["麦麦提热伊木·玉苏普", "2010", "特别困难", "2024专科中医学05班"],["张靖林", "4448", "特别困难", "2025高职康复治疗技术三二分段02班"],["谭泽坤", "0015", "特别困难", "2025高职康复治疗技术三二分段01班"],["林润康", "4936", "特别困难", "2025高职康复治疗技术三二分段02班"],["熊俏宇", "2003", "特别困难", "2025高职康复治疗技术三二分段02班"],["丘永安", "0917", "特别困难", "2025高职中医康复技术三二分段02班"],["蔡雨琪", "2382", "特别困难", "2025高职康复治疗技术3+证书01班"],["马凡艳", "748X", "特别困难", "2025专科中医学01班"],["杨楚洁", "7446", "特别困难", "2025专科中医学01班"],["张紫云", "8841", "特别困难", "2025专科中医学01班"],["陈泽林", "3871", "特别困难", "2025专科中医学01班"],["刘克辉", "1133", "特别困难", "2024专科药学01班"],["任燚坤", "0860", "特别困难", "2024专科药学01班"],["梁静茹", "2849", "特别困难", "2024专科药学03班"],["邓清燕", "0826", "特别困难", "2024专科药学04班"],["廖秋媚", "3606", "特别困难", "2024专科药学04班"],["李思思", "2367", "特别困难", "2025专科药品经营与管理01班"],["苏美珊", "8761", "特别困难", "2023专科药学02班"],["杨艳娜", "334X", "特别困难", "2023专科药学02班"],["谢思琴", "5889", "特别困难", "2023专科药学02班"],["霍尔纯", "1228", "特别困难", "2023专科药学02班"],["黄桂荣", "215X", "特别困难", "2023专科药学01班"],["李琳", "052X", "特别困难", "2023专科药学01班"],["王诛雯", "106X", "特别困难", "2023专科药学01班"],["许东娟", "7307", "特别困难", "2023专科药学01班"],["马莉", "112X", "特别困难", "2024专科临床医学05班"],["靳佳惠", "076X", "特别困难", "2024专科临床医学(影像诊断)01班"],["陈瑞春", "4025", "特别困难", "2024专科临床医学(影像诊断)01班"],["冯宗健", "0017", "特别困难", "2024专科临床医学(影像诊断)01班"],["温艺慧", "2486", "特别困难", "2024专科临床医学06班"],["林子期", "3615", "特别困难", "2024专科临床医学07班"],["钟华标", "6317", "特别困难", "2024专科临床医学07班"],["潘宝琪", "3022", "特别困难", "2024专科临床医学07班"],["梁雄维", "7213", "特别困难", "2024专科临床医学07班"]],
+[["李连君", "6014", "特别困难", "2024专科临床医学07班"],["何秀珊", "0617", "特别困难", "2024专科临床医学05班"],["许晓熠", "1004", "特别困难", "2024专科临床医学06班"],["江佳琪", "2422", "特别困难", "2024专科临床医学07班"],["罗天杏", "0824", "特别困难", "2024高职口腔医学技术3+证书01班"],["林华蓉", "3924", "特别困难", "2024高职口腔医学技术3+证书01班"],["黄丽华", "1505", "特别困难", "2025专科口腔医学01班"],["薛海山", "5292", "特别困难", "2025专科口腔医学01班"],["谢胜青", "3029", "特别困难", "2025专科口腔医学02班"],["林锦银", "2605", "特别困难", "2025专科口腔医学02班"],["王涵静", "3708", "特别困难", "2025专科口腔医学02班"],["童佳美", "250X", "特别困难", "2025专科口腔医学02班"],["简浩潮", "5715", "特别困难", "2025专科口腔医学02班"],["孙俊杰", "5416", "特别困难", "2025专科口腔医学02班"],["邹艳春", "5464", "特别困难", "2025专科口腔医学03班"],["陈奎昂", "2537", "特别困难", "2025专科口腔医学03班"],["徐磊", "2616", "特别困难", "2025专科口腔医学03班"],["陈兴体", "5547", "特别困难", "2025专科口腔医学03班"],["陈丹颖", "5920", "特别困难", "2025专科护理02班"],["刘沛", "3248", "特别困难", "2025专科护理02班"],["唐妹英", "0222", "特别困难", "2025专科护理02班"],["涂慧雅", "6021", "特别困难", "2025专科助产01班"],["黄洁怡", "3829", "特别困难", "2025专科助产01班"],["李锦钰", "2220", "特别困难", "2025专科助产01班"],["欧建恩", "2424", "特别困难", "2025专科助产01班"],["黄琇兰", "3424", "特别困难", "2025专科助产01班"],["李诗柳", "5382", "特别困难", "2025专科助产01班"],["梁安彤", "1424", "特别困难", "2025专科助产01班"],["曾昭敏", "5329", "特别困难", "2025高职护理三二分段01班"],["梁菲菲", "4028", "特别困难", "2025高职护理三二分段02班"],["林婉琦", "1666", "特别困难", "2025高职护理三二分段02班"],["赖思彤", "5646", "特别困难", "2025高职护理三二分段02班"],["蔡雅娇", "1628", "困难", "2025专科护理01班"],["练锐新", "6812", "困难", "2025专科护理02班"],["刘钰瑜", "202X", "困难", "2025专科助产01班"],["温凰璇", "1641", "困难", "2025专科助产01班"],["莫洁榆", "5845", "困难", "2025高职护理三二分段01班"],["田莉婷", "154X", "困难", "2025高职护理三二分段05班"]],
+[["熊雅琳", "1824", "困难", "2025高职护理三二分段08班"],["叶宇", "4024", "困难", "2025高职护理3+证书01班"],["刘树斌", "3533", "困难", "2024专科护理05班"],["李若暖", "4487", "困难", "2024专科护理05班"],["李明娟", "6629", "一般困难", "2023专科健康大数据管理与服务01班"],["李梅", "6623", "一般困难", "2023专科健康大数据管理与服务01班"],["刘雪琳", "4461", "一般困难", "2025高职智慧健康养老服务与管理3+证书01班"],["刘俊彬", "8818", "特别困难", "2023专科健康大数据管理与服务01班"],["图海妮姆·阿塔伍拉", "0182", "特别困难", "2023专科健康管理01班"],["周媛", "3403", "特别困难", "2023专科健康管理01班"],["梁森华", "1619", "特别困难", "2023专科智慧健康养老服务与管理01班"],["陈智斌", "6635", "特别困难", "2023专科智慧健康养老服务与管理01班"],["钟方亮", "281X", "特别困难", "2023专科智慧健康养老服务与管理01班"],["车家乐", "0813", "特别困难", "2023专科健康大数据管理与服务01班"],["余海彤", "4100", "特别困难", "2023专科健康大数据管理与服务01班"],["张乐华", "3344", "特别困难", "2023专科健康大数据管理与服务01班"],["罗洪燕", "3526", "特别困难", "2023专科健康大数据管理与服务01班"],["蓝盈盈", "352X", "特别困难", "2025专科中医学01班"],["沈秀情", "2828", "特别困难", "2025专科中医学01班"],["余伟杰", "1117", "特别困难", "2025专科中医学02班"],["阿依夏·库提鲁克", "1826", "特别困难", "2025专科中医学02班"],["唐家权", "2519", "特别困难", "2025专科中医学02班"],["宋星月", "5668", "特别困难", "2025专科中医学02班"],["赖慧欣", "0247", "特别困难", "2025专科中医学03班"],["黎爱君", "5882", "特别困难", "2025专科中医学03班"],["叶志城", "701X", "特别困难", "2025专科中医学03班"],["宋懿洲", "0011", "特别困难", "2025专科中医学03班"],["陈慧霞", "1882", "特别困难", "2025专科中医学04班"],["张铃敏", "0561", "特别困难", "2025专科中医学04班"],["陈嘉欣", "0621", "特别困难", "2025高职护理3+证书01班"],["陈文韬", "0625", "特别困难", "2023专科药学01班"],["陈楚纯", "6824", "特别困难", "2023专科药学02班"],["贺心妍", "0629", "特别困难", "2023专科药品经营与管理01班"],["肖鲁粤", "0329", "特别困难", "2025本科药学01班"],["林浩然", "2824", "特别困难", "2025本科药学01班"],["杨奕键", "4011", "特别困难", "2025本科药学01班"]],
+[["朱琪", "3920", "特别困难", "2025本科药学01班"],["钟舒琦", "5744", "特别困难", "2025本科药学01班"],["邹家馨", "4402", "特别困难", "2025本科药学01班"],["谭振业", "0015", "特别困难", "2025本科药学01班"],["刘子燕", "2363", "特别困难", "2025本科药学02班"],["刘燕琪", "6823", "特别困难", "2025本科药学03班"],["符娅", "0524", "特别困难", "2025本科药学03班"],["白子钰", "5467", "特别困难", "2024专科临床医学05班"],["林逸谊", "1047", "特别困难", "2024专科临床医学(影像诊断)01班"],["吴锦志", "4916", "特别困难", "2024专科临床医学07班"],["黄晓兰", "4626", "特别困难", "2024专科临床医学06班"],["李瑞华", "221X", "特别困难", "2024专科临床医学06班"],["陈家岚", "8947", "特别困难", "2024专科临床医学08班"],["梁琼方", "0722", "特别困难", "2024专科临床医学08班"],["张嘉俊", "401X", "特别困难", "2024专科临床医学08班"],["黄文杰", "3413", "特别困难", "2024专科临床医学08班"],["陆明凯", "6851", "特别困难", "2024专科临床医学08班"],["吴奕斌", "405X", "特别困难", "2024专科临床医学08班"],["吴焕生", "4016", "特别困难", "2024专科临床医学08班"],["黄友成", "5516", "特别困难", "2024专科临床医学08班"],["李雪婷", "3003", "特别困难", "2025专科口腔医学03班"],["姚鑫语", "0419", "特别困难", "2025专科口腔医学03班"],["宁楚利", "454X", "特别困难", "2025专科口腔医学03班"],["赵立坤", "0017", "特别困难", "2025专科口腔医学03班"],["马子涵", "0306", "特别困难", "2025专科口腔医学04班"],["张钰敏", "6322", "特别困难", "2025专科口腔医学04班"],["杨志稳", "2216", "特别困难", "2025专科口腔医学04班"],["杨玉阳", "3844", "特别困难", "2025专科口腔医学04班"],["缪玟瑜", "4624", "特别困难", "2025专科口腔医学04班"],["赖楚怡", "1661", "特别困难", "2025专科口腔医学04班"],["林佳薇", "0020", "特别困难", "2025专科口腔医学04班"],["李梓平", "4060", "特别困难", "2025专科口腔医学04班"],["彭东东", "0813", "特别困难", "2025专科口腔医学05班"],["李烨群", "3748", "特别困难", "2025高职护理三二分段02班"],["覃晴怡", "3721", "特别困难", "2025高职护理三二分段02班"],["黄婷婷", "4125", "特别困难", "2025高职护理三二分段03班"],["庄丹苗", "1049", "特别困难", "2025高职护理三二分段03班"]],
+[["郑爱思", "1083", "特别困难", "2025高职护理三二分段03班"],["李培兰", "422X", "特别困难", "2025高职护理三二分段03班"],["龚舒乐", "0027", "特别困难", "2025高职护理三二分段03班"],["陈金滢", "5241", "特别困难", "2025高职护理三二分段03班"],["叶雨拉", "0564", "特别困难", "2025高职护理三二分段04班"],["曾静雯", "400X", "特别困难", "2025高职护理三二分段05班"],["郑丽琴", "3560", "特别困难", "2025高职护理三二分段05班"],["洪幼庭", "1245", "特别困难", "2025高职护理三二分段05班"],["张洁林", "4825", "特别困难", "2025高职护理三二分段05班"],["植嘉怡", "5769", "特别困难", "2025高职护理三二分段06班"],["丘妹坚", "7723", "一般困难", "2025高职智慧健康养老服务与管理3+证书01班"],["马晓琪", "602X", "一般困难", "2023专科中医学01班"],["罗巧愉", "2781", "一般困难", "2023专科针灸推拿01班"],["严锦欢", "0982", "一般困难", "2023专科中医学03班"],["林妙惠", "5165", "一般困难", "2024专科康复治疗技术02班"],["李嘉敏", "4302", "一般困难", "2024专科康复治疗技术02班"],["梁一凡", "3707", "一般困难", "2024专科中医骨伤01班"],["林悦婷", "1529", "一般困难", "2024专科针灸推拿01班"],["曾庆红", "0318", "一般困难", "2024专科针灸推拿01班"],["符阳明", "391X", "一般困难", "2024专科中医学08班"],["陈梓煜", "4618", "一般困难", "2024专科中医学08班"],["叶玟谊", "3345", "一般困难", "2024专科中医学08班"],["林清云", "8567", "一般困难", "2024专科中医学08班"],["阿卜杜扎赫尔·阿卜力米提", "0210", "特别困难", "2023专科健康管理01班"],["陈好", "134X", "特别困难", "2023专科健康管理01班"],["王晓娱", "4849", "特别困难", "2023专科健康管理01班"],["陈美锦", "1225", "特别困难", "2023专科健康管理01班"],["林君瑜", "5926", "特别困难", "2023专科预防医学02班"],["陈慧华", "6567", "特别困难", "2023专科预防医学02班"],["林子怡", "304X", "特别困难", "2023专科预防医学01班"],["杨玉婷", "1427", "特别困难", "2023专科预防医学02班"],["翁丹凤", "5122", "特别困难", "2023专科预防医学01班"],["高晓贤", "2422", "特别困难", "2023专科智慧健康养老服务与管理01班"],["卢仪", "0021", "特别困难", "2023专科智慧健康养老服务与管理01班"],["曾德英", "7626", "特别困难", "2024专科智慧健康养老服务与管理01班"],["阿力米热·阿不来提", "2341", "特别困难", "2025专科中医学04班"]],
+[["李碧茵", "9124", "特别困难", "2025专科中医学04班"],["朱明", "003X", "特别困难", "2025专科中医学04班"],["陈倩平", "1321", "特别困难", "2025专科针灸推拿02班"],["李倩蓓", "0226", "特别困难", "2025专科针灸推拿02班"],["刘振兴", "7975", "特别困难", "2025专科针灸推拿01班"],["彭柯", "6075", "特别困难", "2025专科针灸推拿01班"],["林诗蓉", "0121", "特别困难", "2025专科中医骨伤01班"],["梁钰", "1941", "特别困难", "2025专科中医骨伤01班"],["陈绮琦", "2405", "特别困难", "2025专科针灸推拿01班"],["许秦赫", "031X", "特别困难", "2025专科针灸推拿02班"],["易泊鑫", "2417", "特别困难", "2025专科针灸推拿02班"],["柯静雯", "2789", "特别困难", "2025专科针灸推拿01班"],["吴金锋", "3633", "特别困难", "2025本科药学03班"],["黄冰冰", "4060", "特别困难", "2025本科药学04班"],["彭雨佳", "7368", "特别困难", "2025本科药学04班"],["戴函妤", "7222", "特别困难", "2025本科药学04班"],["关丽姿", "272X", "特别困难", "2024本科药学02班"],["兰婷", "2524", "特别困难", "2024本科药学02班"],["吴凯欣", "2437", "特别困难", "2024本科药学02班"],["江净", "2421", "特别困难", "2024本科药学05班"],["蔡惠婷", "6860", "特别困难", "2024本科药学05班"],["陈俞晓", "2103", "特别困难", "2024本科药学05班"],["徐丽琳", "6427", "特别困难", "2024本科药学05班"],["叶晓慧", "4346", "特别困难", "2024本科药学05班"],["李婷", "3102", "特别困难", "2024本科药学05班"],["张梓誉", "0311", "特别困难", "2024专科临床医学10班"],["茹柯耶姆·图尔荪", "1625", "特别困难", "2024专科临床医学10班"],["莫绮君", "1729", "特别困难", "2024专科临床医学10班"],["张唯豪", "2419", "特别困难", "2024专科临床医学09班"],["覃湘云", "4248", "特别困难", "2024专科临床医学09班"],["何熙", "5221", "特别困难", "2024专科临床医学09班"],["周皇冠", "617X", "特别困难", "2024专科临床医学10班"],["李权标", "1832", "特别困难", "2024专科临床医学10班"],["陈培培", "1923", "特别困难", "2024专科临床医学10班"],["林伟聪", "4812", "特别困难", "2024专科临床医学09班"],["吴美仪", "0329", "特别困难", "2024专科临床医学09班"],["林碧娴", "3123", "特别困难", "2024专科临床医学09班"],["邝志凯", "7436", "特别困难", "2024专科临床医学09班"]],
+[["谭婉滢", "4323", "特别困难", "2024专科临床医学(实验班)01班"],["龙嘉慧", "5745", "特别困难", "2025专科口腔医学05班"],["蔡佳玲", "5941", "特别困难", "2025专科口腔医学06班"],["梁瑜真", "2126", "特别困难", "2025专科口腔医学06班"],["李水桃", "4549", "特别困难", "2025专科口腔医学06班"],["李杞", "7367", "特别困难", "2025专科口腔医学06班"],["冯梓昕", "0940", "特别困难", "2025专科口腔医学06班"],["阿米乃姆·阿吉穆", "3527", "特别困难", "2025专科口腔医学07班"],["吕雨洪", "0035", "特别困难", "2025专科口腔医学07班"],["朱晓芸", "5221", "特别困难", "2025专科口腔医学07班"],["黄乃灿", "1434", "特别困难", "2025专科口腔医学07班"],["唐美琪", "5180", "特别困难", "2025专科口腔医学08班"],["张小倩", "474X", "特别困难", "2025专科口腔医学08班"],["苏比努尔·艾麦尔", "2827", "特别困难", "2025专科口腔医学08班"],["邓富珍", "4826", "特别困难", "2025高职护理三二分段06班"],["吕思思", "2427", "特别困难", "2025高职护理三二分段06班"],["梁嘉怡", "2126", "特别困难", "2025高职护理三二分段06班"],["林倩宁", "0022", "特别困难", "2025高职护理三二分段06班"],["曾碧莹", "1129", "特别困难", "2025高职护理三二分段06班"],["李宋娜", "3125", "特别困难", "2025高职护理三二分段06班"],["冯洁仪", "352X", "特别困难", "2025高职护理三二分段06班"],["房欣倪", "6326", "特别困难", "2025高职护理三二分段09班"],["陈乐诗", "5041", "特别困难", "2025高职护理三二分段10班"],["马佳璇", "4588", "特别困难", "2025高职护理三二分段10班"],["许烁纯", "4085", "特别困难", "2025高职护理三二分段10班"],["黄敏纯", "3104", "特别困难", "2025高职护理三二分段07班"],["吴金凤", "2029", "特别困难", "2025高职护理三二分段07班"],["赵海程", "2763", "特别困难", "2025高职护理三二分段07班"],["覃诗盈", "322X", "一般困难", "2024专科中医学08班"],["曾曼璇", "0822", "一般困难", "2024专科中医学07班"],["汪瑞", "0025", "一般困难", "2024专科中医学06班"],["李王菲", "1646", "一般困难", "2024专科中医学06班"],["彭丹丹", "4528", "一般困难", "2024专科中医学05班"],["林建序", "6214", "一般困难", "2025高职中医康复技术三二分段01班"],["黄翠", "6100", "一般困难", "2025高职康复治疗技术3+证书01班"],["刘桢", "3511", "一般困难", "2025专科中医学01班"]],
+[["翁可雯", "0827", "一般困难", "2025专科中医学05班"],["刘佳丽", "1023", "一般困难", "2025专科针灸推拿01班"],["何键衡", "7210", "一般困难", "2025专科针灸推拿02班"],["张嘉宜", "6063", "一般困难", "2025专科康复治疗技术01班"],["黄晓彤", "7426", "一般困难", "2025本科康复治疗学01班"],["官心语", "5622", "特别困难", "2024高职智慧健康养老服务与管理3+证书01班"],["李珏", "0049", "特别困难", "2024高职智慧健康养老服务与管理3+证书01班"],["杨桂连", "7128", "特别困难", "2024高职智慧健康养老服务与管理3+证书01班"],["董缘", "0048", "特别困难", "2024高职智慧健康养老服务与管理3+证书01班"],["邱静", "3848", "特别困难", "2024高职智慧健康养老服务与管理3+证书01班"],["吴應杰", "363X", "特别困难", "2024专科智慧健康养老服务与管理01班"],["许靓纯", "116X", "特别困难", "2024专科预防医学01班"],["宋岳垣", "3317", "特别困难", "2024专科预防医学01班"],["骆建昊", "0010", "特别困难", "2024专科预防医学01班"],["郑植洲", "0078", "特别困难", "2024专科预防医学01班"],["林慧燕", "426X", "特别困难", "2024专科预防医学01班"],["彭捷", "5217", "特别困难", "2024专科预防医学01班"],["吴丽峰", "3342", "特别困难", "2025专科康复治疗技术01班"],["张瀚文", "0126", "特别困难", "2025专科康复治疗技术01班"],["张俪馨", "9129", "特别困难", "2025专科康复治疗技术01班"],["吴漾淼", "1540", "特别困难", "2025专科康复治疗技术01班"],["张婷", "0127", "特别困难", "2025专科康复治疗技术01班"],["林珊", "2941", "特别困难", "2025专科康复治疗技术01班"],["杨洁凡", "3340", "特别困难", "2025专科康复治疗技术02班"],["蔡钊成", "5318", "特别困难", "2025专科康复治疗技术02班"],["赵依彤", "2484", "特别困难", "2025专科康复治疗技术02班"],["梁亮莹", "0029", "特别困难", "2025专科康复治疗技术02班"],["陈漫洁", "3722", "特别困难", "2025专科康复治疗技术02班"],["任丽莎", "8087", "特别困难", "2025专科康复治疗技术02班"],["王嘉莉", "5902", "特别困难", "2025专科康复治疗技术02班"],["孙宇蝶", "1821", "特别困难", "2025专科康复治疗技术02班"],["黎影昊", "8991", "特别困难", "2024本科药学05班"],["胡漫怡", "3386", "特别困难", "2024本科药学05班"],["邱苇", "0024", "特别困难", "2024本科药学06班"],["王子星", "4428", "特别困难", "2024本科药学04班"]],
+[["冯颖欣", "2828", "特别困难", "2024本科药学01班"],["何君浩", "1871", "特别困难", "2024本科药学01班"],["曹素珍", "5265", "特别困难", "2024高职药学3+证书01班"],["郑爱文", "5647", "特别困难", "2024高职药学3+证书01班"],["刘佳宜", "3965", "特别困难", "2024高职药学3+证书01班"],["许曦丹", "0026", "特别困难", "2024专科中药学02班"],["陈玉君", "2863", "特别困难", "2024专科中药学02班"],["廖慧玲", "378X", "特别困难", "2024专科中药学02班"],["温施妍", "5723", "特别困难", "2024专科中药学02班"],["陈美容", "5620", "特别困难", "2024专科临床医学(实验班)01班"],["许天虹", "1026", "特别困难", "2024专科临床医学11班"],["谢瑩瑩", "2820", "特别困难", "2024专科临床医学11班"],["黄锦全", "7213", "特别困难", "2024专科临床医学11班"],["洪艺榕", "3144", "特别困难", "2024专科临床医学11班"],["曾文雅", "4424", "特别困难", "2024专科临床医学11班"],["孔维锌", "5412", "特别困难", "2024专科临床医学11班"],["彭秋玲", "1680", "特别困难", "2024专科临床医学12班"],["钟可欣", "1945", "特别困难", "2024专科临床医学12班"],["陈美玲", "2044", "特别困难", "2024专科临床医学12班"],["王雪瑶", "472X", "特别困难", "2023专科临床医学01班"],["邓晓芳", "8026", "特别困难", "2023专科临床医学01班"],["冯华", "3227", "特别困难", "2023专科临床医学01班"],["秦薇璐", "8065", "特别困难", "2023专科临床医学01班"],["龙星茹", "7342", "特别困难", "2025专科口腔医学08班"],["邱康权", "2619", "特别困难", "2025专科口腔医学05班"],["王海霞", "7564", "特别困难", "2025专科口腔医学06班"],["方龙", "2416", "特别困难", "2025本科口腔医学技术01班"],["李艺敏", "0445", "特别困难", "2025本科口腔医学技术01班"],["何金泉", "1214", "特别困难", "2025本科口腔医学技术01班"],["李彦汶", "1426", "特别困难", "2025本科口腔医学技术02班"],["张文恺", "3017", "特别困难", "2025本科口腔医学技术02班"],["张志强", "291X", "特别困难", "2025本科口腔医学技术02班"],["莫真和", "4017", "特别困难", "2025本科口腔医学技术02班"],["林相君", "186X", "特别困难", "2025专科口腔医学技术02班"],["梁文利", "4622", "特别困难", "2025专科口腔医学技术02班"],["黄丽婷", "5148", "特别困难", "2025专科口腔医学技术02班"],["江浩锋", "3911", "特别困难", "2025高职护理三二分段07班"]],
+[["赵曼羽", "2768", "特别困难", "2025高职护理三二分段07班"],["姚爱婷", "2426", "特别困难", "2025高职护理三二分段08班"],["谭文颖", "1521", "特别困难", "2025高职护理三二分段08班"],["纪海婷", "442X", "特别困难", "2025高职护理三二分段08班"],["袁洁敏", "4121", "特别困难", "2025高职护理三二分段08班"],["罗家琳", "3221", "特别困难", "2025高职护理三二分段08班"],["杨洁怡", "5120", "特别困难", "2025高职护理三二分段08班"],["黄键娜", "2407", "特别困难", "2025高职护理三二分段08班"],["黄思婷", "3400", "特别困难", "2025高职护理3+证书01班"],["梁德容", "0827", "特别困难", "2024专科护理05班"],["吴翠芳", "3881", "特别困难", "2024专科护理05班"],["苟琦琦", "4169", "特别困难", "2024专科护理05班"],["薛彩霞", "0049", "特别困难", "2024专科护理05班"],["黄颖", "224X", "一般困难", "2025本科康复治疗学01班"],["温颖柔", "7968", "一般困难", "2024专科医学检验技术01班"],["林敏铃", "1324", "一般困难", "2024专科医学检验技术01班"],["陈莉珍", "3728", "一般困难", "2024专科医学影像技术01班"],["廖美婷", "1000", "一般困难", "2024专科医学影像技术01班"],["杨健平", "196X", "一般困难", "2024专科医学影像技术02班"],["林伊婷", "3127", "一般困难", "2024专科医学影像技术02班"],["郑坤荔", "3223", "一般困难", "2024专科医学影像技术02班"],["翁雨婷", "2808", "一般困难", "2024专科医学影像技术02班"],["梁凤姬", "3287", "一般困难", "2024专科医学影像技术01班"],["毛诗", "3201", "一般困难", "2024专科医学影像技术01班"],["黎越", "2583", "一般困难", "2024专科医学检验技术02班"],["张嘉莉", "3664", "一般困难", "2024专科医学检验技术02班"],["郑静曼", "2062", "一般困难", "2024专科医学检验技术02班"],["张马权", "3013", "特别困难", "2024专科预防医学01班"],["梁荣恩", "3527", "特别困难", "2024专科预防医学02班"],["杨雨桐", "2948", "特别困难", "2024专科预防医学02班"],["李榕菲", "4942", "特别困难", "2024专科预防医学02班"],["李泽伟", "2135", "特别困难", "2024专科预防医学02班"],["罗海燕", "0921", "特别困难", "2024专科预防医学02班"],["徐宇彬", "1735", "特别困难", "2024专科健康管理01班"],["陈晓彤", "0085", "特别困难", "2024专科健康管理01班"],["钟文燕", "2562", "特别困难", "2024专科健康管理01班"]],
+[["林梅珠", "1887", "特别困难", "2024专科健康管理01班"],["陈雅铃", "6109", "特别困难", "2024专科健康管理01班"],["袁畅志", "3619", "特别困难", "2024专科预防医学01班"],["杨佩玟", "2621", "特别困难", "2025专科康复治疗技术02班"],["李锦卓", "0272", "特别困难", "2025专科康复治疗技术02班"],["邱梓泺", "1210", "特别困难", "2025本科康复治疗学01班"],["叶秀花", "1128", "特别困难", "2025本科康复治疗学01班"],["麦子芊", "894X", "特别困难", "2025本科康复治疗学02班"],["莫海健", "0211", "特别困难", "2023专科医学检验技术01班"],["杨诗雅", "1261", "特别困难", "2023专科医学影像技术01班"],["罗茵茵", "0660", "特别困难", "2023专科医学影像技术01班"],["古丽燕", "4847", "特别困难", "2023专科医学影像技术01班"],["余雪梅", "2825", "特别困难", "2023专科医学检验技术01班"],["陈世杰", "0616", "特别困难", "2023专科医学影像技术01班"],["刘席妍", "0208", "特别困难", "2023专科医学检验技术01班"],["余依迎", "702X", "特别困难", "2023专科医学检验技术02班"],["刘丽", "2228", "特别困难", "2024专科中药学01班"],["林雅琳", "4421", "特别困难", "2024专科中药学01班"],["苏美燕", "5120", "特别困难", "2024专科中药学01班"],["黄藓雅", "5544", "特别困难", "2024专科中药学01班"],["薛佳清", "7969", "特别困难", "2024专科中药学01班"],["陈彩花", "114X", "特别困难", "2024高职中药学3+证书01班"],["丘柠静", "3823", "特别困难", "2024高职药学3+证书02班"],["李雪瑜", "3220", "特别困难", "2024高职药学3+证书02班"],["陈宝儿", "1105", "特别困难", "2024专科中药学02班"],["李怡婷", "6562", "特别困难", "2024本科药学03班"],["罗佳艳", "7566", "特别困难", "2024本科药学03班"],["唐棕濠", "3676", "特别困难", "2024本科药学03班"],["廖均敏", "4484", "特别困难", "2024本科药学03班"],["骆世烽", "8333", "特别困难", "2023专科临床医学01班"],["许国梅", "6089", "特别困难", "2023专科临床医学01班"],["潘伟新", "1513", "特别困难", "2023专科临床医学01班"],["李志坚", "6616", "特别困难", "2023专科临床医学(实验班)班"],["曾铭栩", "4667", "特别困难", "2023专科临床医学(实验班)班"],["黄思榕", "0023", "特别困难", "2023专科临床医学(实验班)班"],["谭凤茵", "6841", "特别困难", "2023专科临床医学(实验班)班"]],
+[["王楠", "2019", "特别困难", "2023专科临床医学02班"],["张东纯", "5727", "特别困难", "2023专科临床医学02班"],["陈航", "4451", "特别困难", "2023专科临床医学07班"],["黄荣志", "5559", "特别困难", "2023专科临床医学07班"],["李国仁", "0034", "特别困难", "2023专科临床医学07班"],["罗琦", "1126", "特别困难", "2023专科临床医学07班"],["张露", "4442", "特别困难", "2023专科临床医学07班"],["黄嘉欣", "8645", "特别困难", "2025专科口腔医学技术02班"],["麦雪莹", "5926", "特别困难", "2025专科口腔医学技术01班"],["刘巧兰", "614X", "特别困难", "2025专科口腔医学技术01班"],["李卉妍", "7127", "特别困难", "2025专科口腔医学技术01班"],["汪晓惠", "5141", "特别困难", "2025专科口腔医学技术01班"],["卢丽婷", "1022", "特别困难", "2025专科口腔医学技术01班"],["陈嘉钰", "0428", "特别困难", "2025专科口腔医学技术01班"],["梁乐", "0024", "特别困难", "2023专科护理01班"],["梅媛颖", "5264", "特别困难", "2023专科护理01班"],["赖小娟", "6843", "特别困难", "2023专科护理01班"],["黄婉蓥", "0327", "特别困难", "2023专科护理01班"],["赵金娇", "3900", "特别困难", "2023专科护理01班"],["文燕", "9825", "特别困难", "2023专科护理01班"],["胡柳婷", "4882", "特别困难", "2023专科护理02班"]]
+];
+
+
+(function(){
+  "use strict";
+
+  /* ---------- 倒计时 ---------- */
+  var targets = {
+    gj: new Date(2026, 8, 21, 9, 0, 0),   // 2026-09-21 09:00
+    gl: new Date(2026, 8, 22, 17, 0, 0)   // 2026-09-22 17:00
+  };
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function tick(){
+    var now = new Date().getTime();
+    ["gj","gl"].forEach(function(k){
+      var ids = {d:"cd"+k+"-d",h:"cd"+k+"-h",m:"cd"+k+"-m",s:"cd"+k+"-s"};
+      var diff = targets[k].getTime() - now;
+      var d = 0, h = 0, m = 0, s = 0;
+      if (diff > 0){
+        d = Math.floor(diff / 86400000);
+        h = Math.floor(diff % 86400000 / 3600000);
+        m = Math.floor(diff % 3600000 / 60000);
+        s = Math.floor(diff % 60000 / 1000);
+      }
+      document.getElementById(ids.d).firstChild.textContent = pad(d);
+      document.getElementById(ids.h).firstChild.textContent = pad(h);
+      document.getElementById(ids.m).firstChild.textContent = pad(m);
+      document.getElementById(ids.s).firstChild.textContent = pad(s);
+    });
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* ---------- 贫困认定资格查询 ---------- */
+  var qName = document.getElementById("qName");
+  var qId4  = document.getElementById("qId4");
+  var qBtn  = document.getElementById("qBtn");
+  var qRes  = document.getElementById("qResult");
+
+  function normName(s){
+    return (s || "").replace(/\s+/g, "").replace(/[·．.]/g, "").toLowerCase();
+  }
+  function lookup(){
+    var name = normName(qName.value);
+    var id4  = (qId4.value || "").trim().toUpperCase();
+    var hits = [];
+    for (var i = 0; i < QR.length; i++){
+      var r = QR[i];
+      if (normName(r[0]) === name && (r[1] || "").toUpperCase() === id4){ hits.push(r); }
+    }
+    return hits;
+  }
+  function render(hits){
+    if (hits.length === 0){
+      qRes.className = "q-result no show";
+      qRes.innerHTML = "<b>查询结果：您不在 2025-2026 学年国家困难生认定名单内。</b><br>根据评审要求，不在认定名单内的同学<b>不具备国家励志奖学金申请资格</b>，无需提交附件2。如有疑问请联系辅导员核实。";
+      return;
+    }
+    var lvMap = {"特别困难":"特别困难","困难":"困难","一般困难":"一般困难"};
+    var lv = lvMap[hits[0][2]] || hits[0][2];
+    var cls = hits[0][3] || "";
+    var listHtml = "";
+    hits.forEach(function(h){
+      listHtml += "<span class=\"r-cls\">认定班级：" + h[3] + "</span>";
+    });
+    qRes.className = "q-result ok show";
+    qRes.innerHTML = "<b>查询结果：您已在 2025-2026 学年国家困难生认定名单内。</b><br>认定等级：<span class=\"r-lv\">" + lv + "</span>" + listHtml +
+      "<br>您已满足申请国家励志奖学金的<b>困难认定资格</b>，请继续核对成绩与综测排名（班级前50%）、无补考重修等条件后，按时提交附件2。";
+  }
+  function doQuery(){
+    var name = normName(qName.value);
+    var id4  = (qId4.value || "").trim().toUpperCase();
+    if (!name){ qRes.className = "q-result no show"; qRes.innerHTML = "请先输入<b>姓名</b>。"; return; }
+    if (!/^[0-9A-Z]{4}$/.test(id4)){ qRes.className = "q-result no show"; qRes.innerHTML = "请输入<b>身份证号码后四位</b>（4位数字，末位为X请大写）。"; return; }
+    render(lookup());
+  }
+  qBtn.addEventListener("click", doQuery);
+  [qName, qId4].forEach(function(el){
+    el.addEventListener("keydown", function(e){ if (e.key === "Enter"){ doQuery(); } });
+  });
+})();
+</script>
+</body>
+</html>
