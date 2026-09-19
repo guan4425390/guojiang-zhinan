@@ -605,8 +605,11 @@ const QR = [
     var id4  = (qId4.value || "").trim().toUpperCase();
     var hits = [];
     for (var i = 0; i < QR.length; i++){
-      var r = QR[i];
-      if (normName(r[0]) === name && (r[1] || "").toUpperCase() === id4){ hits.push(r); }
+      var row = QR[i];
+      for (var j = 0; j < row.length; j++){
+        var r = row[j];
+        if (normName(r[0]) === name && (r[1] || "").toUpperCase() === id4){ hits.push(r); }
+      }
     }
     return hits;
   }
